@@ -94,16 +94,22 @@ public class InterfaceSettings extends SettingsPreferenceFragment
     private static final String PREF_USE_ALT_RESOLVER = "use_alt_resolver";
     private static final String KEY_SHOW_OVERFLOW = "show_overflow";
     private static final String KEY_RECENTS_RAM_BAR = "recents_ram_bar";
+    private static final String KEY_RECENTS_ASSIST = "recents_target_assist";
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+    private static final String KEY_LOW_BATTERY_WARNING_POLICY = "pref_low_battery_warning_policy";
+    private static final String PREF_NOTIFICATION_SHOW_WIFI_SSID = "notification_show_wifi_ssid";
 
     private CheckBoxPreference mShowActionOverflow;
     private CheckBoxPreference mUseAltResolver;
+    private CheckBoxPreference mShowAssistButton;
+    private CheckBoxPreference mShowWifiName;
     private Preference mColorSettings;
     private Preference mHardwareKeys;
     private Preference mRamBar;
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;
+    private ListPreference mLowBatteryWarning;
 
     Context mContext;
 
@@ -141,6 +147,10 @@ public class InterfaceSettings extends SettingsPreferenceFragment
         mUseAltResolver.setChecked(Settings.System.getBoolean(cr,
                 Settings.System.ACTIVITY_RESOLVER_USE_ALT, false));
 
+        mShowAssistButton = (CheckBoxPreference) findPreference(KEY_RECENTS_ASSIST);
+        mShowAssistButton.setChecked(Settings.System.getInt(cr,
+                Settings.System.RECENTS_TARGET_ASSIST, 0) == 1);
+
         mShowActionOverflow = (CheckBoxPreference) findPreference(KEY_SHOW_OVERFLOW);
         mShowActionOverflow.setChecked(Settings.System.getInt(cr,
                 Settings.System.UI_FORCE_OVERFLOW_BUTTON, 0) == 1);
@@ -160,11 +170,30 @@ public class InterfaceSettings extends SettingsPreferenceFragment
         mListViewInterpolator.setSummary(mListViewInterpolator.getEntry());
         mListViewInterpolator.setOnPreferenceChangeListener(this);
 
+        mLowBatteryWarning = (ListPreference) findPreference(KEY_LOW_BATTERY_WARNING_POLICY);
+        int lowBatteryWarning = Settings.System.getInt(getActivity().getContentResolver(),
+                                    Settings.System.POWER_UI_LOW_BATTERY_WARNING_POLICY, 0);
+        mLowBatteryWarning.setValue(String.valueOf(lowBatteryWarning));
+        mLowBatteryWarning.setSummary(mLowBatteryWarning.getEntry());
+        mLowBatteryWarning.setOnPreferenceChangeListener(this);
+
         mRamBar = findPreference(KEY_RECENTS_RAM_BAR);
         updateRamBar();
 
         // Dont display the lock clock preference if its not installed
         removePreferenceIfPackageNotInstalled(findPreference(KEY_LOCK_CLOCK));
+
+        mShowWifiName = (CheckBoxPreference) findPreference(PREF_NOTIFICATION_SHOW_WIFI_SSID);
+        mShowWifiName.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NOTIFICATION_SHOW_WIFI_SSID, 0) == 1);
+
+        PackageManager pm = getPackageManager();
+        boolean isMobileData = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+
+        if (!Utils.isPhone(getActivity()) || !isMobileData) {
+            // Nothing for tablets, large screen devices and non Wifi devices remove options
+            prefSet.removePreference(mShowWifiName);
+        }
 
         setHasOptionsMenu(true);
     }
@@ -186,6 +215,14 @@ public class InterfaceSettings extends SettingsPreferenceFragment
                     Settings.System.LISTVIEW_INTERPOLATOR,
                     listviewinterpolator);
             mListViewInterpolator.setSummary(mListViewInterpolator.getEntries()[index]);
+            return true;
+        } else if (preference == mLowBatteryWarning) {
+            int lowBatteryWarning = Integer.valueOf((String) newValue);
+            int index = mLowBatteryWarning.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.POWER_UI_LOW_BATTERY_WARNING_POLICY,
+                    lowBatteryWarning);
+            mLowBatteryWarning.setSummary(mLowBatteryWarning.getEntries()[index]);
             return true;
         }
          return false;
@@ -236,6 +273,15 @@ public class InterfaceSettings extends SettingsPreferenceFragment
                 Toast.makeText(getActivity(), R.string.hardware_keys_show_overflow_toast_disable,
                         Toast.LENGTH_LONG).show();
             }
+            return true;
+        } else if (preference == mShowAssistButton) {
+            Settings.System.putInt(mContentAppRes,
+                    Settings.System.RECENTS_TARGET_ASSIST,
+            mShowAssistButton.isChecked() ? 1 : 0 );
+        } else if (preference == mShowWifiName) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NOTIFICATION_SHOW_WIFI_SSID,
+                    mShowWifiName.isChecked() ? 1 : 0);
             return true;
         }
 

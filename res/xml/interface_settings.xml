@@ -11,6 +11,12 @@
             android:title="@string/ram_bar" />
 
         <CheckBoxPreference
+            android:key="recents_target_assist"
+            android:title="@string/recents_target_assist_title"
+            android:summary="@string/recents_target_assist_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
             android:key="show_overflow"
             android:title="@string/hardware_keys_show_overflow_title"
             android:summary="@string/hardware_keys_show_overflow_summary"
@@ -26,6 +32,13 @@
         <Preference
             android:key="transparency_dialog"
             android:title="@string/transparency_dialog_title" />
+
+        <PreferenceScreen	
+            android:id="@+id/slim_notification_shortcuts"
+            android:fragment="com.carbon.settings.fragments.notificationshortcuts.NotificationShortcuts"
+            android:key="slim_shortcuts_settings"
+            android:title="@string/notification_shortcuts_settings_title"
+            android:summary="@string/notification_shortcuts_settings_summary" />
 
     </PreferenceCategory>
 
@@ -79,6 +92,20 @@
             android:entries="@array/listview_interpolator_entries"
             android:entryValues="@array/listview_interpolator_values"
             android:defaultValue="0" />
+
+        <ListPreference
+            android:key="pref_low_battery_warning_policy"
+            android:title="@string/pref_low_battery_warning_policy_title"
+            android:dialogTitle="@string/pref_low_battery_warning_policy_dialog_title"
+            android:entries="@array/pref_low_battery_warning_policy_entries"
+            android:entryValues="@array/pref_low_battery_warning_policy_values"
+            android:defaultValue="0" />
+
+        <CheckBoxPreference
+            android:key="notification_show_wifi_ssid"
+            android:title="@string/notification_show_wifi_ssid_title"
+            android:summary="@string/notification_show_wifi_ssid_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
 
