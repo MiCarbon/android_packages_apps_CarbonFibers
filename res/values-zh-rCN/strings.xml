@@ -155,11 +155,6 @@
     <string name="cm_sound_mode_soundVibrate">响铃 + 震动</string>
     <string name="pref_flash_mode_title">手电筒模式</string>
     <string name="expanded_haptic_feedback_title">触感反馈</string>
-    <string name="power_widget_additional_options_cat">其他选项</string>
-    <string name="brightness_location_title">亮度滑块位置</string>
-    <string name="brightness_slider_top">顶部</string>
-    <string name="brightness_slider_bottom">底部</string>
-    <string name="brightness_slider_none">不显示</string>
 
     <!-- Power menu enable disable -->
     <string name="power_menu_title">电源菜单</string>
@@ -195,7 +190,6 @@
     <string name="status_bar_title">状态栏</string>
     <string name="status_bar_general_title">全局</string>
     <string name="status_bar_style_title">风格</string>
-    <string name="status_bar_signal_text_title">信号风格</string>
 	<string name="status_bar_signal_text_title">信号状态风格</string>
     <string name="status_bar_style_icon">图标</string>
     <string name="status_bar_style_hidden">隐藏</string>
@@ -204,7 +198,6 @@
     <string name="status_bar_battery_status_percentage">百分比</string>
     <string name="status_bar_battery_status_circle">圆环</string>
     <string name="status_bar_battery_status_circle_percentage">圆环和百分比</string>
-    <string name="status_bar_battery_status_dotted_circle_percentage">虚线圆环百分比</string>
     <string name="icon_color_behavior_title">自定义图标颜色</string>
     <string name="icon_color_behavior_summary">在状态栏显示的系统图标将被过滤成你喜欢的颜色</string>
     <string name="status_icon_color_summary">选择你偏好的颜色</string>
@@ -760,7 +753,7 @@
     <string name="ribbon_button_colorize_title">操作图标与文本颜色保持一致</string>
     <string name="ribbon_color_title">侧边栏颜色</string>
     <string name="text_color_title">应用标签文本颜色</string>
-    <string name="ribbon_opacity_title">侧边栏不透明度'</string>
+    <string name="ribbon_opacity_title">侧边栏不透明度</string>
     <string name="timeout_spinner_title">侧边栏自动关闭时间</string>
     <string name="ribbon_drag_handle_width_title">滑动区长度</string>
     <string name="ribbon_drag_handle_height_title">滑动区宽度</string>
@@ -801,7 +794,6 @@
     <string name="clear_market_data_title">3. 清除所有相关市场数据.</string>
     <string name="clear_market_data_summary">本步骤将会删除Play商店服务以及Google服务框架等应用的数据.</string>
     <string name="clear_market_data_cleared">数据清空成功</string>
-    <string name="clear_market_data_donot_cleared">"数据清空失败，请手动操作!"</string>
     <string name="reboot_cleardata_title">4. 再点我重启!</string>
     <string name="reboot_cleardata_summary">重启后记得再回到这哦!</string>
     <string name="open_market_title">5. 点我打开Play商店等待一小会</string>
