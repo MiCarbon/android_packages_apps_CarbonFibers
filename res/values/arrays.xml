@@ -828,6 +828,30 @@
         <item>1.6</item>
     </string-array>
 
+    <string-array name="entries_halo_notification_count">
+        <item>@string/halo_notification_count_none</item>
+        <item>@string/halo_notification_count_total</item>
+        <item>@string/halo_notification_count_individual</item>
+        <item>@string/halo_notification_count_both</item>
+    </string-array>
+
+    <string-array name="values_halo_notification_count">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="entries_halo_msgbox_animation">
+        <item>@string/halo_msgbox_animation_none</item>
+        <item>@string/halo_msgbox_animation_flip</item>
+    </string-array>
+
+    <string-array name="values_halo_msgbox_animation">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <string-array name="notification_wallpaper_entries">
         <item>@string/notification_background_color_fill</item>
         <item>@string/notification_background_custom_image</item>
@@ -1084,6 +1108,44 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <string-array name="ad_redisplay_entries" translatable="false">
+        <item>@string/ad_redisplay_never</item>
+        <item>@string/ad_redisplay_1m</item>
+        <item>@string/ad_redisplay_5m</item>
+        <item>@string/ad_redisplay_15m</item>
+        <item>@string/ad_redisplay_30m</item>
+        <item>@string/ad_redisplay_1h</item>
+        <item>@string/ad_redisplay_2h</item>
+        <item>@string/ad_redisplay_5h</item>
+    </string-array>
+
+    <string-array name="ad_redisplay_values" translatable="false">
+        <item>0</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>18000000</item>
+    </string-array>
+
+    <string-array name="clear_recents_position_entries">
+        <item>@string/clear_recents_position_disabled</item>
+        <item>@string/clear_recents_position_bottom_right</item>
+        <item>@string/clear_recents_position_bottom_left</item>
+        <item>@string/clear_recents_position_top_right</item>
+        <item>@string/clear_recents_position_top_left</item>
+    </string-array>
+
+    <string-array name="clear_recents_position_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 
 </resources>

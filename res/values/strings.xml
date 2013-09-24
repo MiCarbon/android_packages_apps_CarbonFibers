@@ -59,6 +59,11 @@
 
     <!-- Lock Screen Shortcuts -->
     <string name="lock_screen_title">Lock screen</string>
+    <string name="lock_screen_general_category">General</string>
+    <string name="lock_screen_buttons_category">Buttons</string>
+    <string name="lock_screen_targets_category">Targets</string>
+    <string name="lock_screen_ad_category">Active Display</string>
+    <string name="lock_screen_advanced_category">Advanced</string>
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
     <string name="lockscreen_target_title">Slider shortcuts</string>
     <string name="lockscreen_target_summary">View or change custom lock screen shortcuts</string>
@@ -75,7 +80,7 @@
     <string name="lockscreen_battery_status_charging">Only when charging</string>
     <string name="lockscreen_battery_status_alwayson">Always on</string>
     <string name="lockscreen_minimize_challenge_title">Minimize lockscreen challenge</string>
-    <string name="lockscreen_minimize_challenge_summary">Set wether the lockscreen challenge (circle, pattern, pin) is minimized when the screen is turned on.</string>
+    <string name="lockscreen_minimize_challenge_summary">Set whether the lockscreen challenge (circle, pattern, pin) is minimized when the screen is turned on.</string>
 
     <!-- Lock screen shortcuts -->
     <string name="picker_activities">Activities</string>
@@ -110,6 +115,37 @@
     <string name="icon_picker_system_icons_title">System icons</string>
     <string name="icon_picker_gallery_title">Gallery</string>
     <string name="icon_picker_pack_title">Icon pack</string>
+
+    <!-- Active Display -->
+    <string name="ad_settings_title">Active display</string>
+    <string name="ad_settings_summary">Change active display settings</string>
+    <string name="ad_enable_title">Enable</string>
+    <string name="ad_enable_summary_on">Active display enabled</string>
+    <string name="ad_enable_summary_off">Active display disabled</string>
+    <string name="ad_text_title">Notification text</string>
+    <string name="ad_text_summary">Show the notification text around the ring.</string>
+    <string name="ad_all_notifications_title">All notifications</string>
+    <string name="ad_all_notifications_summary">Show all notifications including ongoing, non-clearable notifications.</string>
+    <string name="ad_pocket_mode_title">Pocket mode</string>
+    <string name="ad_pocket_mode_summary">Show active display notifications when you take the device out of your pocket.</string>
+    <string name="ad_redisplay_title">Redisplay notifications</string>
+    <string name="ad_sunlight_mode_title">Sunlight mode</string>
+    <string name="ad_sunlight_mode_summary">Invert the colors when in areas with bright light such as direct sunlight.</string>
+    <string name="ad_customizations_title">Customizations</string>
+    <string name="ad_brightness_title">Notification brightness</string>
+    <string name="ad_brightness_summary">Brightness level for displaying notifications when automatic brightness is not enabled.</string>
+    <string name="ad_show_date_title">Show date</string>
+    <string name="ad_show_date_summary">Show the date above the clock</string>
+    <string name="ad_show_ampm_title">Show AM/PM</string>
+    <string name="ad_show_ampm_summary">Show AM/PM indicator next to time when using 12hour format</string>
+    <string name="ad_redisplay_never">Never</string>
+    <string name="ad_redisplay_1m">1 minute</string>
+    <string name="ad_redisplay_5m">5 minutes</string>
+    <string name="ad_redisplay_15m">15 minutes</string>
+    <string name="ad_redisplay_30m">30 minutes</string>
+    <string name="ad_redisplay_1h">1 hour</string>
+    <string name="ad_redisplay_2h">2 hours</string>
+    <string name="ad_redisplay_5h">5 hours</string>
 
     <!-- Power Widget  -->
     <string name="power_widget_title">Power widget</string>
@@ -195,6 +231,12 @@
     <string name="lockscreen_buttons_toggle_sound">Toggle sound</string>
 
     <!-- Status bar -->
+    <string name="status_bar_general_category">General</string>
+    <string name="status_bar_battery_category">Battery</string>
+    <string name="status_bar_clock_category">Clock</string>
+    <string name="status_bar_power_widget_category">Power Widget</string>
+    <string name="status_bar_toggles_category">Toggles</string>
+    <string name="status_bar_notification_category">Notification</string>
     <string name="status_bar_title">Statusbar</string>
     <string name="status_bar_general_title">General</string>
     <string name="status_bar_style_title">Style</string>
@@ -350,8 +392,8 @@
     <string name="cm_battery">CM skinny battery</string>
     <string name="carbon_battery">Carbon</string>
     <string name="hide">Hide</string>
+    <string name="battery_text_color">Battery text color</string>
     <string name="circle_battery_color">Circle color</string>
-    <string name="circle_battery_text_color">Circle text color</string>
     <string name="circle_battery_animation_speed">Circle animation speed</string>
     <string name="circle_battery_animation_speed_none">None</string>
     <string name="circle_battery_animation_speed_slow">Slow</string>
@@ -396,6 +438,10 @@
     <string name="transparency_dialog_lockscreen">Lockscreen</string>
 
     <!-- Navigation Bar -->
+    <string name="navigation_bar_general_category">General</string>
+    <string name="navigation_bar_advanced_category">Advanced</string>
+    <string name="navigation_bar_targets_category">Targets</string>
+    <string name="navigation_widget">Widget</string>
     <string name="navigation_bar">Navigation bar</string>
     <string name="navbar_hide">NavBar hide Options</string>
     <string name="navbar_option_cat">Options</string>
@@ -569,6 +615,8 @@
     <string name="toggle_favcontact_summary">Choose your favorite contact</string>
     <string name="toggle_collapse_generic_title">Collapse shade on toggle click</string>
     <string name="toggle_collapse_generic_summary">Close shade on all generic toggle actions</string>
+    <string name="toggle_vibrate_title">Vibrate on toggle click</string>
+    <string name="toggle_vibrate_summary">Vibrate on all generic toggle actions</string>
     <string name="toggle_enable_fasttoggle_title">Enable fast toggle</string>
     <string name="toggle_enable_fasttoggle_summary">Overrides default behavior</string>
     <string name="toggle_choose_fasttoggle_side_title">Choose fast toggle side</string>
@@ -657,11 +705,11 @@
     <string name="custom_carrier_label_notset">Custom label currently not set</string>
 
     <!--- Clock Widget -->
-    <string name="lock_clock_title">Clock Widget</string>
+    <string name="lock_clock_title">Clock widget</string>
     <string name="lock_clock_summary">View or change how the widget will display</string>
 
     <string name="lockscreen_hide_initial_page_hints_title">Hide initial page hints</string>
-    <string name="lockscreen_hide_initial_page_hints_summary">Set wether the hints for the left and right widgets are shown when the screen is turned on.</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">Set whether the hints for the left and right widgets are shown when the screen is turned on.</string>
 
     <string name="lockscreen_quick_unlock_control_title">Quick pin unlock</string>
     <string name="lockscreen_quick_unlock_control_summary">Unlock password/pin lockscreen without pressing enter button</string>
@@ -673,8 +721,7 @@
     <string name="lockscreen_camera_widget_title">Camera widget</string>
 
     <!-- Alternate default app picker -->
-    <string name="alt_resolver_title">Use Alt Default App Picker</string>
-    <string name="alt_resolver_summary">Use Alternate Default App Picker</string>
+    <string name="alt_resolver_title">Use alternate default app picker</string>
 
     <!-- Lock screen background -->
     <string name="lockscreen_style_options_title">Lock screen style</string>
@@ -689,16 +736,15 @@
     <string name="lockscreen_alpha_title">Background transparency</string>
 
     <!-- Recents Ram Bar -->
-    <string name="ram_bar">Recents RAM bar</string>
+    <string name="ram_bar_title">RAM bar</string>
     <string name="ram_bar_note_title">Note</string>
     <string name="ram_bar_note_summary">This rambar shows how android is really using your available ram. Please note that having apps open in the background and cached helps for your device to open your apps faster. For further explanations on how android memory (RAM) managment works, please follow the help button in the menu.</string>
-    <string name="ram_bar_mode_title">Recents RAM bar mode</string>
+    <string name="ram_bar_mode_title">RAM bar mode</string>
     <string name="ram_bar_mode_dialog_title">Show on recents RAM bar</string>
     <string name="ram_bar_none">None</string>
     <string name="ram_bar_apps">Applications</string>
     <string name="ram_bar_cache">Applications and cache</string>
     <string name="ram_bar_other">Applications, cache and other</string>
-    <string name="ram_bar_style_cat">Recents RAM bar style</string>
     <string name="ram_bar_color_app_mem_color">Applications RAM color</string>
     <string name="ram_bar_color_cache_mem_color">Cache RAM color</string>
     <string name="ram_bar_color_total_mem_color">Other RAM color</string>
@@ -731,10 +777,10 @@
 
     <!-- HALO -->
     <string name="halo_title">Halo</string>
-
     <string name="halo_category">HALO</string>
+    <string name="halo_general_category">General</string>
     <string name="halo_status_category">Status</string>
-    <string name="halo_colors_category">Colors</string>
+    <string name="halo_advanced_category">Advanced</string>
     <string name="halo_hide_title">Hide HALO after activity</string>
     <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
     <string name="halo_reversed_title">Reverse HALO gestures</string>
@@ -752,7 +798,6 @@
     <string name="halo_size_large">Large</string>
     <string name="halo_size_gigantic">Gigantic</string>
     <string name="halo_size_monster">Monster</string>
-
     <string name="halo_colors_title">Custom colors</string>
     <string name="halo_colors_summary">Enable custom colors for HALO instead of the default theme colors</string>
     <string name="halo_circle_color_title">Circle color</string>
@@ -760,12 +805,26 @@
     <string name="halo_bubble_text_color_title">Speech bubble text color</string>
     <string name="halo_effect_color_title">Effect color</string>
     <string name="halo_effect_color_summary">Requires a systemui restart</string>
-
     <string name="halo_enabled_title">Enable HALO</string>
     <string name="halo_enabled_summary">Completely enable or disable HALO</string> 
-
     <string name="halo_pause_title">HALO pause active app</string>
     <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused (enabled by default on low memory devices)</string>
+    <string name="halo_ninja_title">Ninja mode</string>
+    <string name="halo_ninja_summary">HALO will disappear completely when empty</string>
+    <string name="halo_notification_msgbox_title">Enable message pop-up</string>
+    <string name="halo_notification_msgbox_summary">Show message box for incoming notifications</string>
+    <string name="halo_unlock_ping_title">Ping on unlock</string>
+    <string name="halo_unlock_ping_summary">HALO will ping when device is unlocked if new notifications were received</string>
+    <string name="halo_notification_count_title">Notification count</string>
+    <string name="halo_notification_count_summary">Display notification counts on HALO</string>
+    <string name="halo_notification_count_none">None</string>
+    <string name="halo_notification_count_total">Total</string>
+    <string name="halo_notification_count_individual">Per app</string>
+    <string name="halo_notification_count_both">Both</string>
+    <string name="halo_msgbox_animation_title">Message box animation</string>
+    <string name="halo_msgbox_animation_summary">Halo message box animation for incoming notifications</string>
+    <string name="halo_msgbox_animation_none">None</string>
+    <string name="halo_msgbox_animation_flip">Flip</string>
 
     <!-- We want HALO popups -->
     <string name="popups_title">Allow floating windows</string>
@@ -775,7 +834,7 @@
     <string name="statusbar_behavior_title">Statusbar behavior</string>
     <string name="statusbar_show">Show</string>
     <string name="statusbar_hide">Hide</string>
-    <string name="statusbar_auto_rem">Auto hide: no clearable notifications (use if permanent notifications are present)</string>
+    <string name="statusbar_auto_rem">Auto hide: no clearable notifications</string>
     <string name="statusbar_auto_all">Auto hide: no notifications</string>
     <string name="statusbar_show_summary">Show statusbar at all times</string>
     <string name="statusbar_hide_summary">Hide statusbar at all times</string>
@@ -851,6 +910,11 @@
     <string name="ribbon_toggles_button_title">Toggles button on bottom</string>
     <string name="ribbon_hide_ime_title">Keyboard swipe area hide.</string>
 
+    <string name="interface_general_category">General</string>
+    <string name="interface_recents_category">Recents</string>
+    <string name="interface_density_category">Density</string>
+    <string name="interface_buttons_category">Buttons</string>
+
     <!-- LCD Density -->
     <string name="dpi">DPI</string>
     <string name="su_dialog_error_title">Warning</string>
@@ -885,8 +949,26 @@
     <string name="custom_density_dialog_button_got">Got it!</string>
     <string name="custom_density_dialog_button_reboot">Reboot now</string>
 
+    <!-- Animation Controls -->
+    <string name="title_animation_controls">Animations</string>
+    <string name="activity_open_title">Activity Open Animation</string>
+    <string name="activity_close_title">Activity Close Animation</string>
+    <string name="task_open_title">Task Open Animation</string>
+    <string name="task_close_title">Task Close Animation</string>
+    <string name="task_move_to_front_title">Move To Front Animation</string>
+    <string name="task_move_to_back_title">Move To Back Animation</string>
+    <string name="wallpaper_open_title">Wallpaper Open Animation</string>
+    <string name="wallpaper_close_title">Wallpaper Close Animation</string>
+    <string name="wallpaper_intra_open_title">Wallpaper Intra Open Animation</string>
+    <string name="wallpaper_intra_close_title">Wallpaper Intra Close Animation</string>
+    <string name="animation_duration_title">Animation Duration</string>
+    <string name="title_animation_no_override">Prevent App Overrides</string>
+    <string name="summary_animation_no_override">Prevent apps from overriding transitions.</string>
+    <string name="animation_duration_default">Default</string>
+
     <!-- ListView animation -->
-    <string name="listview_animation_title">ListView Animation</string>
+    <string name="list_view_title">Scrolling</string>
+    <string name="listview_animation_title">Scroll Animation</string>
     <string name="listview_off">Off</string>
     <string name="listview_wave_left">Wave (Left)</string>
     <string name="listview_wave_right">Wave (Right)</string>
@@ -901,7 +983,7 @@
     <string name="listview_rotate">Rotate</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">ListView Interpolator</string>
+    <string name="listview_interpolator_title">Scroll Interpolator</string>
     <string name="listview_accelerate_interpolator">accelerate_interpolator</string>
     <string name="listview_decelerate_interpolator">decelerate_interpolator</string>
     <string name="listview_accelerate_decelerate_interpolator">accelerate_decelerate_interpolator</string>
@@ -915,7 +997,7 @@
     <string name="show_network_speed_summary">Show network speed in statusbar</string>
 
     <!--  Other device settings -->
-    <string name="more_device_controls_title">Device Tunables</string>
+    <string name="more_device_controls_title">Device tunables</string>
     <string name="more_device_settings_title">Other device options</string>
     <string name="sensors_motors_title">Sensors &amp; motors</string>
     <string name="display_calibration_title">Display calibration</string>
@@ -960,8 +1042,8 @@
     <string name="lockscreen_torch_navring">NavRing</string>
 
     <!-- Recents -->
-    <string name="recents_target_assist_title">Show Google Assistant in Recents</string>
-    <string name="recents_target_assist_summary">This will show a button in recents to access your Google Now or long-press it to voice search.</string>
+    <string name="recents_target_assist_title">Show Google Assistant</string>
+    <string name="recents_target_assist_summary">Access Google Now or long press to voice search</string>
 
     <!-- Low battery inidicator options -->
     <string name="pref_low_battery_warning_policy_title">Low battery warning</string>
@@ -973,7 +1055,22 @@
     <string name="low_battery_warning_policy_sound">Sound only</string>
     <string name="low_battery_warning_policy_disabled">Disabled</string>
 
-    <!-- Notification Behavior Preferences -->
+    <!-- Notification behavior preferences -->
     <string name="notification_behaviour_title">Notification behavior</string>
+
+    <!-- Fast Charge -->
+    <string name="fast_charge_not_supported">Fast Charge is not supported by the current kernel</string>
+
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Show 4G icon</string>
+    <string name="show_lte_or_fourgee_summary">Use 4G network icon instead of LTE</string>
+
+    <!-- Clear recents -->
+    <string name="clear_recents_position_title">Clear recents position</string>
+    <string name="clear_recents_position_disabled">Disabled</string>
+    <string name="clear_recents_position_bottom_right">Bottom right</string>
+    <string name="clear_recents_position_bottom_left">Bottom left</string>
+    <string name="clear_recents_position_top_right">Top right</string>
+    <string name="clear_recents_position_top_left">Top left</string>
 
 </resources>

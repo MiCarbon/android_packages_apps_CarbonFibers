@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="general_options"
+        android:title="@string/status_bar_general_title">
+
+        <CheckBoxPreference
+            android:key="show_overflow"
+            android:title="@string/hardware_keys_show_overflow_title"
+            android:summary="@string/hardware_keys_show_overflow_summary"
+            android:persistent="false"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="use_alt_resolver"
+            android:title="@string/alt_resolver_title"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="transparency_dialog"
+            android:title="@string/transparency_dialog_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="options"
+        android:title="@string/miscellaneous_options_title">
+
+        <PreferenceScreen
+           android:key="lock_clock"
+           android:title="@string/lock_clock_title"
+           android:summary="@string/lock_clock_summary">
+           <intent android:action="android.intent.action.MAIN"
+                   android:targetPackage="com.cyanogenmod.lockclock"
+                   android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+        </PreferenceScreen>
+
+        <ListPreference
+            android:key="pref_low_battery_warning_policy"
+            android:title="@string/pref_low_battery_warning_policy_title"
+            android:dialogTitle="@string/pref_low_battery_warning_policy_dialog_title"
+            android:entries="@array/pref_low_battery_warning_policy_entries"
+            android:entryValues="@array/pref_low_battery_warning_policy_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

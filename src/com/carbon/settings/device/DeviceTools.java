@@ -24,14 +24,17 @@ import android.app.FragmentTransaction;
 import android.content.res.Resources;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.preference.PreferenceDrawerActivityAlt;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
-import android.view.MenuItem;
-import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.carbon.settings.R;
+import com.carbon.settings.SettingsPreferenceFragment;
+import com.carbon.settings.Utils;
 
 // import htc one stuffs
 import com.carbon.settings.device.htc.*;
@@ -39,12 +42,9 @@ import com.carbon.settings.device.htc.*;
 
 import java.util.ArrayList;
 
-public class DeviceTools extends FragmentActivity {
+public class DeviceTools extends SettingsPreferenceFragment {
 
     private static final String TAG = "DeviceTools";
-
-    public static final String SHARED_PREFERENCES_BASENAME = "com.carbon.settings.device";
-    public static final String ACTION_UPDATE_PREFERENCES = "com.carbon.settings.device.UPDATE";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
@@ -52,31 +52,58 @@ public class DeviceTools extends FragmentActivity {
     boolean isHtcOne;
     String titleString[];
 
+    ViewGroup mContainer;
+
+    static Bundle mSavedState;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.pager_tab);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        mContainer = container;
 
         isHtcOne = getResources().getBoolean(R.bool.is_htc_one);
 
-        mViewPager = (ViewPager) findViewById(R.id.viewPager);
-        mPagerTabStrip = (PagerTabStrip) findViewById(R.id.pagerTabStrip);
-        TitleAdapter titleAdapter = new TitleAdapter(getFragmentManager());
-        mViewPager.setAdapter(titleAdapter);
-        mViewPager.setCurrentItem(0);
-        mPagerTabStrip.setDrawFullUnderline(true);
-        mPagerTabStrip.setTabIndicatorColor(getResources().getColor(android.R.color.holo_blue_light));
+        View view = inflater.inflate(R.layout.pager_tab, container, false);
+        mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
+        mPagerTabStrip = (PagerTabStrip) view.findViewById(R.id.pagerTabStrip);
 
-        final ActionBar bar = getActionBar();
-        bar.setDisplayShowTitleEnabled(false);
+        DeviceToolAdapter DeviceToolAdapter = new DeviceToolAdapter(getFragmentManager());
+        mViewPager.setAdapter(DeviceToolAdapter);
 
+        return view;
     }
 
-    class TitleAdapter extends FragmentPagerAdapter {
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        // We don't call super.onActivityCreated() here, since it assumes we already set up
+        // Preference (probably in onCreate()), while ProfilesSettings exceptionally set it up in
+        // this method.
+        // On/off switch
+        Activity activity = getActivity();
+        //Switch
+
+        if (activity instanceof PreferenceDrawerActivityAlt) {
+            PreferenceDrawerActivityAlt preferenceActivity = (PreferenceDrawerActivityAlt) activity;
+        }
+
+        // After confirming PreferenceScreen is available, we call super.
+        super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        if (!Utils.isTablet(getActivity())) {
+            mContainer.setPadding(0, 0, 0, 0);
+        }
+    }
+
+    class DeviceToolAdapter extends FragmentPagerAdapter {
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
 
-        public TitleAdapter(FragmentManager fm) {
+        public DeviceToolAdapter(FragmentManager fm) {
             super(fm);
             // Display for certain devices only
             if (isHtcOne) {
@@ -100,6 +127,16 @@ public class DeviceTools extends FragmentActivity {
         public int getCount() {
             return frags.length;
         }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            if (position >= getCount()) {
+                FragmentManager manager = ((Fragment) object).getFragmentManager();
+                FragmentTransaction trans = manager.beginTransaction();
+                trans.remove((Fragment) object);
+                trans.commit();
+            }
+        }
     }
 
     private String[] getTitles() {
@@ -110,15 +147,5 @@ public class DeviceTools extends FragmentActivity {
                     getResources().getString(R.string.category_touchscreen_title)};
         }
         return titleString;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-        case android.R.id.home:
-            DeviceTools.this.onBackPressed();
-        default:
-            return super.onOptionsItemSelected(item);
-        }
     }
 }
