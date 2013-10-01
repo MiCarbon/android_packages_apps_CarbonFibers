@@ -122,7 +122,7 @@
     <string name="ad_enable_summary_on">动态通知已启用</string>
     <string name="ad_enable_summary_off">动态通知已禁用</string>
     <string name="ad_text_title">通知文本</string>
-    <string name="ad_text_summary">在锁屏圆环周围显示通知的具体信息.</string>
+    <string name="ad_text_summary">在锁屏圆环周围显示通知的具体内容.</string>
     <string name="ad_all_notifications_title">所有通知</string>
     <string name="ad_all_notifications_summary">显示不可清除或正在进行的通知,例如USB连接通知.</string>
     <string name="ad_pocket_mode_title">口袋模式</string>
@@ -193,6 +193,11 @@
     <string name="cm_sound_mode_soundVibrate">响铃 + 震动</string>
     <string name="pref_flash_mode_title">手电筒模式</string>
     <string name="expanded_haptic_feedback_title">触感反馈</string>
+    <string name="power_widget_additional_options_cat">其他设置</string>
+    <string name="brightness_location_title">亮度滑动条位置</string>
+    <string name="brightness_slider_top">在顶端</string>
+    <string name="brightness_slider_bottom">在底部</string>
+    <string name="brightness_slider_none">不显示</string>
 
     <!-- Power menu enable disable -->
     <string name="power_menu_title">电源菜单</string>
@@ -230,10 +235,11 @@
     <string name="status_bar_clock_category">时间</string>
     <string name="status_bar_power_widget_category">电量控制小部件</string>
     <string name="status_bar_toggles_category">开关</string>
-    <string name="status_bar_notification_category">通知</string>
-    <string name="status_bar_title">状态栏</string>
+    <string name="status_bar_notification_category">通知栏</string>
+    <string name="status_bar_title">状态栏和通知栏</string>
     <string name="status_bar_general_title">全局</string>
     <string name="status_bar_style_title">风格</string>
+    <string name="status_bar_signal_title">信号状态</string>
 	<string name="status_bar_signal_text_title">信号状态风格</string>
     <string name="status_bar_style_icon">图标</string>
     <string name="status_bar_style_hidden">隐藏</string>
@@ -255,7 +261,7 @@
     <string name="clock_color_title">时钟颜色</string>
     <string name="status_bar_clock_style_reset">重置颜色</string>
     <string name="status_bar_show_clock_title">显示时钟</string>
-    <string name="status_bar_am_pm_title">AM/PM 风格</string>
+    <string name="status_bar_am_pm_title">上午/下午显示风格</string>
     <string name="status_bar_am_pm_info">24小时时钟已启用</string>
     <string name="enable_clock_weekday">星期几</string>
     <string name="enable_clock_weekday_summary">时钟前显示星期几</string>
@@ -268,6 +274,72 @@
     <string name="clock_date_format">日期格式</string>
     <string name="clock_date_string_edittext_title">必须是日期格式 eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">输入文本</string>
+
+   <!-- Notification Shortcuts -->
+    <string name="notification_shortcuts_grouptitle">快捷方式</string>
+    <string name="notification_shortcuts_settings_title">通知栏快捷方式</string>
+    <string name="notification_shortcuts_settings_summary">在通知栏中显示快捷方式来快速执行操作</string>
+    <string name="notification_shortcuts_empty_title">无</string>
+    <string name="notification_shortcuts_edit_title">设置快捷方式</string>
+    <string name="notification_shortcuts_edit_msg">选择或更改想要添加的应用或图表</string>
+    <string name="notification_shortcuts_reset_title">重置快捷方式</string>
+    <string name="notification_shortcuts_category_reset_title">重置</string>
+    <string name="notification_shortcuts_title">快捷方式</string>
+    <string name="notification_shortcuts_icon_picker_stock_icons_title">原生图标</string>
+    <string name="notification_shortcuts_quantity_title">快捷方式数量</string>
+    <string name="notification_shortcuts_quantity_summary">控制要显示的快捷方式的数量</string>
+    <string name="notification_shortcuts_move_text">更改排序</string>
+    <string name="notification_shortcuts_move_up">已把<xliff:g id="app_name">%s</xliff:g>向上提升了一栏</string>
+    <string name="notification_shortcuts_move_down">已把<xliff:g id="app_name">%s</xliff:g>向下调低了一栏</string>
+    <string name="notification_shortcuts_color_title">快捷方式图标颜色</string>
+    <string name="notification_shortcuts_color_summary">自定义自带图标/应用图标的颜色</string>
+    <string name="notification_shortcuts_colorize_toggle_title">自定义图标颜色</string>
+    <string name="notification_shortcuts_colorize_toggle_summary">将任何应用的图标都渲染成选定的图标颜色</string>
+    <string name="notification_shortcuts_hide_carrier_title">隐藏运营商名称</string>
+
+    <!-- Notification Icons -->
+    <string name="notification_shortcuts_icon_picker_alarm">闹钟</string>
+    <string name="notification_shortcuts_icon_picker_andy">安迪</string>
+    <string name="notification_shortcuts_icon_picker_battery">电池</string>
+    <string name="notification_shortcuts_icon_picker_browser">浏览器</string>
+    <string name="notification_shortcuts_icon_picker_calendar">日历</string>
+    <string name="notification_shortcuts_icon_picker_camera">相机</string>
+    <string name="notification_shortcuts_icon_picker_cloud">云</string>
+    <string name="notification_shortcuts_icon_picker_contact">联系人</string>
+    <string name="notification_shortcuts_icon_picker_directdial">快速拨号</string>
+    <string name="notification_shortcuts_icon_picker_directmessage">快速短信</string>
+    <string name="notification_shortcuts_icon_picker_email">电子邮件</string>
+    <string name="notification_shortcuts_icon_picker_email2">电子邮件 2</string>
+    <string name="notification_shortcuts_icon_picker_facebook">Facebook</string>
+    <string name="notification_shortcuts_icon_picker_favorite">星标</string>
+    <string name="notification_shortcuts_icon_picker_file_browser">文件浏览器</string>
+    <string name="notification_shortcuts_icon_picker_file_browser2">文件浏览器 2</string>
+    <string name="notification_shortcuts_icon_picker_gallery">图库</string>
+    <string name="notification_shortcuts_icon_picker_google_small">Google</string>
+    <string name="notification_shortcuts_icon_picker_gplus">Google +</string>
+    <string name="notification_shortcuts_icon_picker_gtalk">GTalk</string>
+    <string name="notification_shortcuts_icon_picker_help">帮助</string>
+    <string name="notification_shortcuts_icon_picker_joystick">手柄</string>
+    <string name="notification_shortcuts_icon_picker_key">密钥/账号</string>
+    <string name="notification_shortcuts_icon_picker_laptop">笔记本</string>
+    <string name="notification_shortcuts_icon_picker_luggage">旅行</string>
+    <string name="notification_shortcuts_icon_picker_maps">地图</string>
+    <string name="notification_shortcuts_icon_picker_market">市场</string>
+    <string name="notification_shortcuts_icon_picker_movie">电影</string>
+    <string name="notification_shortcuts_icon_picker_music">音乐</string>
+    <string name="notification_shortcuts_icon_picker_nav">导航</string>
+    <string name="notification_shortcuts_icon_picker_phone">电话</string>
+    <string name="notification_shortcuts_icon_picker_pinterest">Pinterest</string>
+    <string name="notification_shortcuts_icon_picker_play">Play 商店</string>
+    <string name="notification_shortcuts_icon_picker_podcast">Podcast</string>
+    <string name="notification_shortcuts_icon_picker_quicksettings">快速设置</string>
+    <string name="notification_shortcuts_icon_picker_rss">RSS 源</string>
+    <string name="notification_shortcuts_icon_picker_sdcard">SD卡</string>
+    <string name="notification_shortcuts_icon_picker_search">搜索</string>
+    <string name="notification_shortcuts_icon_picker_sms">信息</string>
+    <string name="notification_shortcuts_icon_picker_terminal">终端</string>
+    <string name="notification_shortcuts_icon_picker_twitter">Twitter</string>
+    <string name="notification_shortcuts_icon_picker_unlock">解锁</string>
 
     <!-- Status bar notification count -->
     <string name="status_bar_notif_count_title">显示通知数量</string>
@@ -298,7 +370,7 @@
     <!-- Battery Icon and Bar -->
     <string name="status_bar_battery_icon_bar_title">电池图标和电量条风格</string>
     <string name="battery_icon_cat">电池图标风格</string>
-    <string name="status_bar_battery_title">电池图标风格</string>
+    <string name="status_bar_battery_title">电池图标样式</string>
     <string name="title_statusbar_battery">状态栏电量</string>
     <string name="icon_with_text">图标与文本</string>
     <string name="icon_with_centered_text">图标+图标中文本</string>
@@ -314,11 +386,12 @@
     <string name="circle_battery_w_percent">圆环百分比</string>
     <string name="circle_dotted_w_percent">虚线圆环百分比</string>
     <string name="speed_battery">速度计风格</string>
-    <string name="square_battery">SquareMod</string>
-    <string name="gear_battery">Gear</string>
+    <string name="square_battery">正方形</string>
+    <string name="gear_battery">齿轮</string>
     <string name="cm_battery">CM式风格</string>
     <string name="carbon_battery">Carbon式</string>
     <string name="hide">隐藏</string>
+    <string name="battery_text_color">电量数字颜色</string>
     <string name="circle_battery_color">圆环颜色</string>
     <string name="circle_battery_text_color">圆环文本颜色</string>
     <string name="circle_battery_animation_speed">圆环动画速度</string>
@@ -327,7 +400,7 @@
     <string name="circle_battery_animation_speed_stock">默认</string>
     <string name="circle_battery_animation_speed_fast">快</string>
     <string name="circle_battery_reset_title">重置圆环颜色</string>
-    <string name="circle_battery_reset_summary">重置圆环颜色可以让你使用当前主题定义的圆环颜色</string>
+    <string name="circle_battery_reset_summary">重置圆环颜色可以让你使用当前主题使用的圆环颜色</string>
     <string name="battery_bar">电量条位置</string>
     <string name="battery_bar_color">电量条颜色</string>
     <string name="battery_bar_cat">电量条风格</string>
@@ -509,27 +582,27 @@
     <string name="size_4_dp">4 dp</string>
 
     <!-- Nav Ring Targets -->
-    <string name="navbar_ring_cat">Navigation ring targets</string>
-    <string name="navbar_ring">Custom ring targets</string>
-    <string name="navring_enable_long">Enable longpress for navigation ring</string>
-    <string name="navring_target_save">Navigation rings saved</string>
-    <string name="navring_target_reset_message">Do you want to reset the navigation ring?</string>
-    <string name="navring_target_reset">Navigation ring targets reset.</string>
-    <string name="choose_action_title">Choose action</string>
-    <string name="choose_action_short_title">Choose short action</string>
-    <string name="choose_action_long_title">Choose long action</string>
-    <string name="action_long_save"> set as long action</string>
-    <string name="title_navring_amount">Number of navigation ring targets</string>
-    <string name="summary_navring_amount">Choose number of targets in the navigation ring</string>
-    <string name="interface_navring_settings_title">Navigation ring</string>
+    <string name="navbar_ring_cat">导航环目标</string>
+    <string name="navbar_ring">自定义环目标</string>
+    <string name="navring_enable_long">开启长按操作</string>
+    <string name="navring_target_save">已保存导航环</string>
+    <string name="navring_target_reset_message">你想要重置导航环吗?</string>
+    <string name="navring_target_reset">导航环目标已重置.</string>
+    <string name="choose_action_title">选择操作</string>
+    <string name="choose_action_short_title">选择短按操作</string>
+    <string name="choose_action_long_title">选择长按操作</string>
+    <string name="action_long_save"> 已设置为长按操作</string>
+    <string name="title_navring_amount">导航环目标数量上限</string>
+    <string name="summary_navring_amount">选择导航环目标的数量</string>
+    <string name="interface_navring_settings_title">导航环</string>
     <string name="interface_navring_settings_summary">@null</string>
-    <string name="navring_target_info">Drag your finger to targets to assign actions</string>
-    <string name="navring_clear">Clear action</string>
-    <string name="navring_short">Short action</string>
-    <string name="navring_long">Long action</string>
-    <string name="navring_icon">Custom icon</string>
-    <string name="navring_target_amount_text">Current number of targets</string>
-    <string name="navring_target_longpress_text">Longpress actions</string>
+    <string name="navring_target_info">在屏幕底端,用手指拖动到相应位置来设置目标</string>
+    <string name="navring_clear">清除操作</string>
+    <string name="navring_short">短按操作</string>
+    <string name="navring_long">长按操作</string>
+    <string name="navring_icon">自定义图标</string>
+    <string name="navring_target_amount_text">当前目标数量</string>
+    <string name="navring_target_longpress_text">长按操作</string>
 
     <!-- Statusbar | Toggles -->
     <string name="title_statusbar_toggles">状态栏开关</string>
@@ -628,7 +701,7 @@
     <string name="miscellaneous_options_title">杂项</string>
 
     <!-- Custom Carrier Label -->
-    <string name="custom_carrier_label_title">自定义运营商名称</string>
+    <string name="custom_carrier_label_title">状态栏/通知栏底部运营商名称</string>
     <string name="custom_carrier_label_explain">请输入新的运营商名称，留空为恢复默认运营商名称。</string>
     <string name="custom_carrier_label_notset">当前没有设置运营商名称</string>
 
@@ -707,7 +780,7 @@
     <string name="hardware_keys_action_in_app_search">应用内搜索</string>
 
     <!-- HALO -->
-    <string name="halo_title">Halo</string>
+    <string name="halo_title">HALO</string>
 
     <string name="halo_category">HALO</string>
     <string name="halo_general_category">一般</string>
@@ -780,7 +853,7 @@
 
     <!-- Statusbar Quick Peek -->
     <string name="statusbar_quick_peek_title">全屏下拉</string>
-    <string name="statusbar_quick_peek_summary">隐藏时轻滑屏幕顶端可下拉状态栏</string>
+    <string name="statusbar_quick_peek_summary">全屏时从屏幕顶端下滑可下拉状态栏</string>
 
     <!-- Ribbon -->
     <string name="ribbon_settings_title">多功能栏</string>
@@ -796,7 +869,7 @@
     <string name="ribbon_icon_space_title">图标间隔</string>
     <string name="app_window_space_title">图标垂直间隔</string>
     <string name="ribbon_icon_size_title">图标大小</string>
-    <string name="ribbon_dismiss_title">Ribbon dismiss action</string>
+    <string name="ribbon_dismiss_title">多功能栏关闭操作</string>
     <string name="ribbon_animation_duration_title">动画长度</string>
     <string name="ribbon_long_swipe_title">滑动区域长滑操作</string>
     <string name="ribbon_long_press_title">滑动区域长按</string>
@@ -829,9 +902,9 @@
     <string name="ribbon_insert">插入按钮</string>
     <string name="ribbon_handle_location_title">多功能栏滑动区位置</string>
     <string name="ribbon_icon_location_title">图标位置</string>
-    <string name="window_text_color_title">窗口文本颜色e</string>
+    <string name="window_text_color_title">窗口文本颜色</string>
     <string name="window_color_title">窗口颜色</string>
-    <string name="window_opacity_title">窗口不透明度u</string>
+    <string name="window_opacity_title">窗口不透明度</string>
     <string name="window_columns_title">窗口行数</string>
     <string name="window_app_hide_title">选择要隐藏的应用</string>
     <string name="center">居中</string>
@@ -842,7 +915,7 @@
     <string name="not_bar">非导航栏操作</string>
     <string name="multi_select_title">选择要添加的目标</string>
     <string name="ribbon_animation_type_title">动画风格</string>
-    <string name="ribbon_toggles_button_title">Toggles button on bottom</string>
+    <string name="ribbon_toggles_button_title">底部开关按钮</string>
     <string name="ribbon_hide_ime_title">滑动时隐藏键盘.</string>
 
      <string name="interface_general_category">一般</string>
@@ -902,7 +975,8 @@
     <string name="animation_duration_default">默认</string>
 
     <!-- ListView animation -->
-    <string name="listview_animation_title">列表动画</string>
+    <string name="list_view_title">滚动</string>
+    <string name="listview_animation_title">滚动动画</string>
     <string name="listview_off">关闭</string>
     <string name="listview_wave_left">波浪 (左)</string>
     <string name="listview_wave_right">波浪 (右)</string>
@@ -917,7 +991,7 @@
     <string name="listview_rotate">旋转</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">列表变化</string>
+    <string name="listview_interpolator_title">滚动变化</string>
     <string name="listview_accelerate_interpolator">越来越快</string>
     <string name="listview_decelerate_interpolator">越来越慢</string>
     <string name="listview_accelerate_decelerate_interpolator">先快后慢</string>
@@ -953,8 +1027,8 @@
     <string name="gamma_tuning_summary_head">Tweak gamma values</string>
 
     <!-- Hardware tunables - Key backlight -->
-    <string name="button_backlight_title">按键背光</string>
-    <string name="button_backlight_enabled">显示按键灯</string>
+    <string name="button_backlight_title">按键灯</string>
+    <string name="button_backlight_enabled">打开按键灯</string>
     <string name="keyboard_backlight_enabled">显示键盘灯</string>
     <string name="button_backlight_seekbar_title">按键灯亮度</string>
     <string name="keyboard_backlight_seekbar_title">键盘灯亮度</string>
@@ -965,7 +1039,7 @@
         <item quantity="other"><xliff:g id="seconds">%d</xliff:g> 秒</item>
     </plurals>
     <string name="backlight_summary_disabled">已关闭按键灯</string>
-    <string name="backlight_summary_enabled_with_timeout">持续 <xliff:g id="timeout">%s</xliff:g> 关闭</string>
+    <string name="backlight_summary_enabled_with_timeout">持续<xliff:g id="timeout">%s</xliff:g>后熄灭</string>
     <string name="backlight_summary_enabled">已打开按键灯</string>
 
     <string name="lockscreen_glow_torch_title">快速手电筒</string>
