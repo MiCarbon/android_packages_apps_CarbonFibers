@@ -618,7 +618,9 @@
     <string name="toggle_collapse_generic_title">点击开关时自动收起</string>
     <string name="toggle_collapse_generic_summary">对开关进行操作后收起通知栏</string>
     <string name="toggle_vibrate_title">点击开关时震动</string>
-    <string name="toggle_vibrate_summary">对开关进行操作时震动</string>
+    <string name="toggle_vibrate_summary">对任何开关进行操作时震动</string>
+    <string name="toggle_floating_toggles_title">悬浮开关</string>
+    <string name="toggle_floating_toggles_summary">在一个悬浮窗中执行所有开关操作</string>
     <string name="toggle_enable_fasttoggle_title">启用快速下拉</string>
     <string name="toggle_enable_fasttoggle_summary">从状态栏一侧快速下拉开关</string>
     <string name="toggle_choose_fasttoggle_side_title">选择快速下拉侧</string>
