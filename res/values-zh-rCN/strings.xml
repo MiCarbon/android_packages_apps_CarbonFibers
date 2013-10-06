@@ -433,13 +433,13 @@
 
     <!-- Transparency -->
     <string name="transparency_dialog_title">透明度设置</string>
-    <string name="transparency_dialog_linked_transparency">状态栏和导航栏使用同一透明度</string>
+    <string name="transparency_dialog_linked_transparency">状态栏和导航栏使用同一不透明度</string>
     <string name="transparency_dialog_transparency_sb_and_nv">状态栏和导航栏</string>
     <string name="transparency_dialog_statusbar">状态栏</string>
     <string name="transparency_dialog_navbar">导航栏</string>
-    <string name="transparency_dialog_match_keyguard_alpha">与锁屏界面透明度保持一致</string>
-    <string name="transparency_dialog_transparency">主屏透明度</string>
-    <string name="transparency_dialog_transparency_keyguard">锁屏界面透明度</string>
+    <string name="transparency_dialog_match_keyguard_alpha">与锁屏界面不透明度保持一致</string>
+    <string name="transparency_dialog_transparency">主屏不透明度</string>
+    <string name="transparency_dialog_transparency_keyguard">锁屏界面不透明度</string>
     <string name="transparency_dialog_lockscreen">锁屏界面</string>
 
     <!-- Navigation Bar -->
@@ -627,7 +627,7 @@
     <string name="toggle_floating_toggles_title">悬浮开关</string>
     <string name="toggle_floating_toggles_summary">在一个悬浮窗中执行所有开关操作</string>
     <string name="toggle_enable_fasttoggle_title">启用快速下拉</string>
-    <string name="toggle_enable_fasttoggle_summary">从状态栏一侧快速下拉开关</string>
+    <string name="toggle_enable_fasttoggle_summary">从状态栏一侧快速下拉开关页面</string>
     <string name="toggle_choose_fasttoggle_side_title">选择快速下拉侧</string>
     <string name="toggle_choose_fasttoggle_side_summary">选择应该从哪侧快速下拉状态栏开关</string>
     <string name="toggle_dialog_arrange_title">开关设置</string>
@@ -717,7 +717,7 @@
     <string name="lock_clock_summary">查看或更改小部件的显示方式</string>
 
     <string name="lockscreen_hide_initial_page_hints_title">隐藏初始页面提示</string>
-    <string name="lockscreen_hide_initial_page_hints_summary">设置是否在屏幕打开时显示左边或右边的小部件的存在感提示.</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">设置是否在屏幕开启时在锁屏界面显示左右两旁小部件的白色边框.</string>
 
     <string name="lockscreen_quick_unlock_control_title">PIN快速解锁</string>
     <string name="lockscreen_quick_unlock_control_summary">当密码输入正确时直接解锁</string>
@@ -831,7 +831,7 @@
     <string name="halo_notification_msgbox_title">启用通知提示框</string>
     <string name="halo_notification_msgbox_summary">收到通知时显示提示框</string>
     <string name="halo_unlock_ping_title">解锁时Ping通知</string>
-    <string name="halo_unlock_ping_summary">当手机解锁是,HALO 在收到新通知时将会发送Ping通知</string>
+    <string name="halo_unlock_ping_summary">在解锁状态下,HALO 在收到新通知时将会发送Ping通知</string>
     <string name="halo_notification_count_title">通知数量</string>
     <string name="halo_notification_count_summary">在HALO图标上显示收到的通知数量</string>
     <string name="halo_notification_count_none">不显示</string>
@@ -884,16 +884,16 @@
     <string name="ribbon_lockscreen">锁屏界面多功能栏</string>
     <string name="ribbon_notifications">通知栏多功能栏</string>
     <string name="ribbon_quicksettings">快速设置面板多功能栏</string>
-    <string name="ribbon_swipe_left">屏幕左边多功能栏</string>
-    <string name="ribbon_swipe_right">屏幕右边多功能栏</string>
-    <string name="ribbon_swipe_bottom">屏幕底部多功能栏</string>
+    <string name="ribbon_swipe_left">左侧边栏</string>
+    <string name="ribbon_swipe_right">右侧边栏</string>
+    <string name="ribbon_swipe_bottom">底部侧边栏</string>
     <string name="app_window">应用窗口</string>
     <string name="clone_title">选择要克隆的多功能栏</string>
     <string name="icon_size_normal">正常</string>
     <string name="icon_size_20">中等</string>
     <string name="icon_size_15">小</string>
-    <string name="ribbon_left_enable_title">启用左滑侧边栏</string>
-    <string name="ribbon_right_enable_title">启用右滑侧边栏</string>
+    <string name="ribbon_left_enable_title">启用左部侧边栏</string>
+    <string name="ribbon_right_enable_title">启用右部侧边栏</string>
     <string name="ribbon_bottom_enable_title">启用底部侧边栏</string>
     <string name="ribbon_bottom_warning_title">你无法在导航栏启用时从底部滑出侧边栏,需要打开自动隐藏导航栏或者关闭导航栏才可使用.
     </string>
