@@ -34,8 +34,7 @@
 
         <activity
             android:name=".CrSettingsActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -145,6 +144,15 @@
         <activity
             android:name=".fragments.halo.HaloTab"
             android:label="@string/halo_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.carbon.settings.SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragments.pie.PieTab"
+            android:label="@string/pie_controls_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

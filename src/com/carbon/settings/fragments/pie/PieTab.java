@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.carbon.settings.fragments.inter;
+package com.carbon.settings.fragments.pie;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -36,27 +36,22 @@ import com.carbon.settings.R;
 import com.carbon.settings.SettingsPreferenceFragment;
 import com.carbon.settings.Utils;
 
-import com.carbon.settings.fragments.inter.*;
+import com.carbon.settings.fragments.pie.*;
 
-import java.lang.Exception;
 import java.util.ArrayList;
 
-public class InterfaceTab extends SettingsPreferenceFragment {
+public class PieTab extends SettingsPreferenceFragment {
 
-    private static final String TAG = "Interface_Category";
+    private static final String TAG = "Pie_Category";
 
     PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
 
-    String titleString[];
-
     ViewGroup mContainer;
 
-    static Bundle mSavedState;
+    String titleString[];
 
-    public boolean hasButtons() {
-        return !getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
-    }
+    static Bundle mSavedState;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,16 +62,10 @@ public class InterfaceTab extends SettingsPreferenceFragment {
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
         mPagerTabStrip = (PagerTabStrip) view.findViewById(R.id.pagerTabStrip);
 
-        InterfaceAdapter InterfaceAdapter = new InterfaceAdapter(getFragmentManager());
-        mViewPager.setAdapter(InterfaceAdapter);
+        PieAdapter PieAdapter = new PieAdapter(getFragmentManager());
+        mViewPager.setAdapter(PieAdapter);
 
         return view;
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        // After confirming PreferenceScreen is available, we call super.
-        super.onActivityCreated(savedInstanceState);
     }
 
     @Override
@@ -88,15 +77,19 @@ public class InterfaceTab extends SettingsPreferenceFragment {
         }
     }
 
-    class InterfaceAdapter extends FragmentPagerAdapter {
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    class PieAdapter extends FragmentPagerAdapter {
         String titles[] = getTitles();
         private Fragment frags[] = new Fragment[titles.length];
 
-        public InterfaceAdapter(FragmentManager fm) {
+        public PieAdapter(FragmentManager fm) {
             super(fm);
-            frags[0] = new InterfaceGeneral();
-            frags[1] = new InterfaceButtons();
-            frags[2] = new InterfaceRecents();
+            frags[0] = new PieGeneral();
+            frags[1] = new PieAdvanced();
         }
 
         @Override
@@ -116,11 +109,9 @@ public class InterfaceTab extends SettingsPreferenceFragment {
     }
 
     private String[] getTitles() {
-        String titleString[];
         titleString = new String[]{
-                getString(R.string.interface_general_category),
-                getString(R.string.interface_buttons_category),
-                getString(R.string.interface_recents_category)};
+                getString(R.string.pie_general_category),
+                getString(R.string.pie_advanced_category)};
         return titleString;
     }
 }
