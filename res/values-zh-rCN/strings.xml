@@ -238,7 +238,7 @@
     <string name="status_bar_general_category">一般</string>
     <string name="status_bar_battery_category">电池</string>
     <string name="status_bar_clock_category">时间</string>
-    <string name="status_bar_power_widget_category">电量控制小部件</string>
+    <string name="status_bar_quick_settings_category">快速设置面板</string>
     <string name="status_bar_toggles_category">开关</string>
     <string name="status_bar_notification_category">通知栏</string>
     <string name="status_bar_title">状态栏和通知栏</string>
@@ -609,76 +609,17 @@
     <string name="navring_target_amount_text">当前目标数量</string>
     <string name="navring_target_longpress_text">长按操作</string>
 
-    <!-- Statusbar | Toggles -->
-    <string name="title_statusbar_toggles">状态栏开关</string>
-    <string name="toggles_display_close">关闭</string>
-    <string name="toggles_display_dialog">选择要显示的开关</string>
-    <string name="toggles_layout_title">开关排列顺序</string>
-    <string name="toggles_per_row_title">每行开关数量</string>
-    <string name="toggles_per_row_summary">显示每行要显示多少个开关</string>
-    <string name="toggles_style_title">开关风格</string>
-    <string name="toggles_style_summary">选择使用传统风格或方块样式显示开关</string>
-    <string name="toggle_favcontact_title">常用联系人</string>
-    <string name="toggle_favcontact_summary">选择你常用的联系人</string>
-    <string name="toggle_collapse_generic_title">点击开关时自动收起</string>
-    <string name="toggle_collapse_generic_summary">对开关进行操作后收起通知栏</string>
-    <string name="toggle_vibrate_title">点击开关时震动</string>
-    <string name="toggle_vibrate_summary">对任何开关进行操作时震动</string>
-    <string name="toggle_floating_toggles_title">悬浮开关</string>
-    <string name="toggle_floating_toggles_summary">在一个悬浮窗中执行所有开关操作</string>
-    <string name="toggle_enable_fasttoggle_title">启用快速下拉</string>
-    <string name="toggle_enable_fasttoggle_summary">从状态栏一侧快速下拉开关页面</string>
-    <string name="toggle_choose_fasttoggle_side_title">选择快速下拉侧</string>
-    <string name="toggle_choose_fasttoggle_side_summary">选择应该从哪侧快速下拉状态栏开关</string>
-    <string name="toggle_dialog_arrange_title">开关设置</string>
-    <string name="toggle_dialog_add_toggles">选择开关来添加</string>
-    <string name="toggle_style_tile">方块式</string>
-    <string name="toggle_style_traditional">传统风格</string>
-    <string name="toggle_style_scrollable">传统风格 (可滚动)</string>
-    <string name="toggle_swap_handle_side">拖动条置于右侧</string>
-    <string name="add_toggles">更改要显示的开关</string>
-    <string name="screenshot_delay_title">截屏延迟</string>
-    <string name="screenshot_delay_summary">设置长按截图开关后延迟多久截图</string>
-    <string name="toggle_action_title">操作 %1$s &amp; 图标</string>
-    <string name="toggle_action_title_alt">长按操作 %1$s &amp; 图标</string>
-    <string name="toggle_longpress_title">长按操作 %1$s</string>
-    <string name="custom_toggle_desc">Each click causes the toggle to move to the next action. If your toggle has an empty click action and no custom icon; the long click action\'s icon will be used.\nThis is useful for users who want their click actions to simply cycle through toggle actions without launching anything.</string>
-    <string name="custom_help_title">工作方式</string>
-    <string name="custom_help_summary">点击查看更多信息</string>
-    <string name="custom_toggle_okay">了解</string>
-    <string name="custom_toggle_cat">自定义开关</string>
-    <string name="custom_button_cat">自定义开关操作</string>
-    <string name="dclick_action_title">双击时操作</string>
-    <string name="dclick_action_summary">更改双击时的动作</string>
-    <string name="boot_action_title">启动时运行</string>
-    <string name="boot_action_summary">将会在启动时运行状态一</string>
-    <string name="match_icon_action_title">启动已显示的图标</string>
-    <string name="match_icon_action_summary">Useful for aligning task to displayed icon per your specific usage</string>
-    <string name="action_toggle_title">开关操作</string>
-    <string name="action_toggle_summary">Toggle sequence from left to right</string>
-    <string name="no_dclick">No action</string>
-    <string name="back_one_dclick">Reverse state</string>
-    <string name="state_one_dclick">Set to state one</string>
-    <string name="skip_back_dclick">Skip back (no action)</string>
-    <string name="skip_up_dclick">Skip forward (no action)</string>
-    <string name="collapse_bar_title">收起通知栏</string>
-    <string name="collapse_bar_summary">操作完成后收起通知栏</string>
-    <string name="no_collapse">从不收起</string>
-    <string name="click_collapse">在短按时</string>
-    <string name="long_collapse">在长按时</string>
-    <string name="both_collapse">长按和短按均可</string>
-    <string name="custom_toggle_colors">自定义颜色</string>
 
     <!-- Tile background style and text color -->
-    <string name="tile_background_style_title">方块背景风格</string>
+    <string name="tile_background_style_title">按钮背景风格</string>
     <string name="tile_background_style_summary">可选择随机颜色/填充颜色/默认背景</string>
-    <string name="tile_background_color_title">设置方块背景颜色</string>
-    <string name="tile_background_pressed_color_title">设置按下方块按钮时的背景颜色</string>
+    <string name="tile_background_color_title">设置按钮背景颜色</string>
+    <string name="tile_background_pressed_color_title">按下按钮时的背景颜色</string>
     <string name="tile_background_random">随机颜色</string>
     <string name="tile_background_color_fill">填充颜色</string>
     <string name="tile_background_default">默认背景</string>
-    <string name="tile_custom_background_dialog_title">方块背景风格</string>
-    <string name="tile_text_color_title">设置方块下方文本颜色</string>
+    <string name="tile_custom_background_dialog_title">按钮背景风格</string>
+    <string name="tile_text_color_title">设置按钮下方文本颜色</string>
 
     <!-- Random colors -->
     <string name="random_colors">随机颜色</string>
@@ -699,7 +640,6 @@
     <string name="menu_ribbon_apps">重置多功能栏应用</string>
     <string name="menu_ribbon_rearrange">重新排列多功能栏图标</string>
     <string name="menu_ribbon_hide">隐藏应用</string>
-    <string name="menu_ribbon_toggles">设置开关</string>
     <string name="menu_ribbon_na">不可用</string>
     <string name="menu_ribbon_toggles_error">开关仅在左侧边栏或右侧边栏启用时生效.</string>
 
@@ -924,6 +864,19 @@
     <string name="ribbon_animation_type_title">动画风格</string>
     <string name="ribbon_toggles_button_title">底部开关按钮</string>
     <string name="ribbon_hide_ime_title">滑动时隐藏键盘.</string>
+    <string name="toggle_swap_handle_side">排序条置于右侧</string>
+    <string name="toggles_display_close">关闭</string>
+    <string name="no_dclick">无操作</string>
+    <string name="back_one_dclick">Reverse state</string>
+    <string name="state_one_dclick">Set to state one</string>
+    <string name="skip_back_dclick">Skip back (no action)</string>
+    <string name="skip_up_dclick">Skip forward (no action)</string>
+    <string name="collapse_bar_title">收起通知栏</string>
+    <string name="collapse_bar_summary">操作完成后收起通知栏</string>
+    <string name="no_collapse">从不收起</string>
+    <string name="click_collapse">在短按时</string>
+    <string name="long_collapse">在长按时</string>
+    <string name="both_collapse">点按即收起</string>
 
      <string name="interface_general_category">一般</string>
     <string name="interface_recents_category">最近应用程序界面</string>
@@ -1169,4 +1122,107 @@
     <string name="pie_button_color_title">按钮颜色</string>
     <string name="all_color">自定义颜色</string>
     <string name="stock_color">默认颜色</string>
+
+       <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">快速设置面板</string>
+    <string name="quick_settings_title">快速设置</string>
+    <string name="title_static_tiles">静态按钮</string>
+    <string name="tile_picker_title">按钮与布局</string>
+    <string name="tile_picker_summary">查看、选择并改变显示按钮的布局</string>
+    <string name="tile_choose_title">选择一个按钮</string>
+
+    <string name="title_tile_airplane">飞行模式</string>
+    <string name="title_tile_battery">电池状态</string>
+    <string name="title_tile_bluetooth">蓝牙</string>
+    <string name="title_tile_brightness">亮度</string>
+    <string name="title_tile_camera">相机</string>
+    <string name="title_tile_carbon">MiCarbon</string>
+    <string name="title_tile_powermenu">电源菜单</string>
+    <string name="title_tile_sleep">进入睡眠</string>
+    <string name="title_tile_gps">GPS</string>
+    <string name="title_tile_torch">手电筒</string>
+    <string name="title_tile_lockscreen">锁屏</string>
+    <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_mobiledata">移动数据</string>
+    <string name="title_tile_profile">情景模式</string>
+    <string name="title_tile_autorotate">旋转</string>
+    <string name="title_tile_settings">设置</string>
+    <string name="title_tile_sound">声音</string>
+    <string name="title_tile_sync">同步</string>
+    <string name="title_tile_wifiap">Wi-Fi 热点</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_wimax">WiMAX</string>
+    <string name="title_tile_user">用户切换器</string>
+    <string name="title_tile_networkmode">网络模式</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">屏幕超时</string>
+    <string name="title_tile_usb_tether">USB 热点</string>
+    <string name="title_tile_quiet_hours">安静时段</string>
+    <string name="title_tile_volume">音量</string>
+    <string name="title_tile_trds">暗黑 Carbon</string>
+    <string name="title_tile_music">音乐</string>
+
+    <string name="title_dynamic_tiles">动态按钮</string>
+    <string name="dynamic_tiles_note_title">注意</string>
+    <string name="dynamic_tiles_note_summary">动态按钮不是随时都会显示的，它们仅会在有相关的系统事件时显示</string>
+    <string name="title_dynamic_alarm">闹钟</string>
+    <string name="title_dynamic_bugreport">错误报告</string>
+    <string name="title_dynamic_ime">输入法选择器</string>
+    <string name="title_dynamic_usbtether">USB 热点</string>
+    <string name="title_dynamic_wifi">Wi-Fi 显示</string>
+
+    <string name="title_tile_expanded_desktop">扩展桌面</string>
+    <string name="title_tile_network_adb">网络ADB</string>
+
+    <string name="title_general">一般</string>
+    <string name="title_quick_pulldown">快速下拉</string>
+    <string name="summary_quick_pulldown">从状态栏的%1$s边缘拉下时直接开启快速设置面板</string>
+    <string name="quick_pulldown_off">关闭</string>
+    <string name="quick_pulldown_summary_left">左</string>
+    <string name="quick_pulldown_summary_right">右</string>
+    <string name="quick_pulldown_left">左</string>
+    <string name="quick_pulldown_right">右</string>
+    <string name="title_collapse_panel">自动关闭面板</string>
+    <string name="summary_collapse_panel">做出操作后关闭快速设置面板</string>
+    <string name="title_floating_window">悬浮窗</string>
+    <string name="summary_floating_window">将快速设置面板的项目在悬浮窗中打开</string>    
+    <string name="disable_quick_settings_panel">快速设置</string>
+    <string name="disable_quick_settings_panel_summary">开启或关闭快速设置</string>
+    <string name="quick_settings_enabled">已启用</string>
+    <string name="quick_settings_disabled">已关闭</string>
+    <string name="title_no_notifications_pulldown">无通知时快速下拉</string>
+    <string name="summary_no_notifications_pulldown">如果没有通知驻留直接下拉面板而非通知栏</string>
+    <string name="no_notifications_pulldown_summary_nonperm">无可清除通知时快速下拉</string>
+    <string name="no_notifications_pulldown_summary_all">无通知时快速下拉</string>
+    <string name="no_notifications_pulldown_off">关闭</string>
+    <string name="no_notifications_pulldown_nonperm">无可清除通知时</string>
+    <string name="no_notifications_pulldown_all">无任何通知时</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quicksettings_tiles_style">快速设置风格</string>
+    <string name="summary_quicksettings_tiles_style">显示或更改快速设置风格选项</string>
+    <string name="quicksettings_tiles_style_additional_options">其它选项</string>
+    <string name="tiles_per_row_title">每行按钮数量</string>
+    <string name="tiles_per_row_duplicate_landscape_title">倍增横屏按钮数量</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">横屏时每行按钮数量将是竖屏时的两倍</string>
+    <string name="quick_tiles_text_color_title">按钮文本颜色</string>
+    <string name="quick_settings_style_reset">重置颜色</string>
+    <string name="quick_tiles_bg_color_title">按钮背景颜色</string>
+    <string name="quick_tiles_bg_pressed_color_title">按下按钮时的背景颜色</string>
+    <string name="flip_qs_tiles_title">翻转按钮</string>
+    <string name="flip_qs_tiles_summary">在按下按钮时翻转它</string>
+    <string name="qs_random_colors_title">随机颜色</string>
+    <string name="qs_random_colors_summary">随机决定快速设置面板的颜色</string>
+
+    <!-- Reset tiles -->
+    <string name="tiles_add_title">添加</string>
+    <string name="tiles_reset_title">重置</string>
+    <string name="tiles_reset_message">您确定将显示的按钮与布局还原为默认值？</string>
+    <string name="dialog_delete_title">删除</string>
+
+    <!-- Quick access ribbon -->
+    <string name="category_quick_access">快速打开多功能栏</string>
+    <string name="title_quick_access">在抽屉中显示</string>
+    <string name="title_quick_access_linked">同步布局</string>
+    <string name="summary_quick_access_linked">与快速设置面板使用相同的按钮和布局</string>
 </resources>
