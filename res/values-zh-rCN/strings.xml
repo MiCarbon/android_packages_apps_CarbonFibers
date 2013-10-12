@@ -1140,6 +1140,7 @@
     <string name="title_tile_powermenu">电源菜单</string>
     <string name="title_tile_sleep">进入睡眠</string>
     <string name="title_tile_gps">GPS</string>
+    <string name="title_tile_fcharge">快速充电</string>
     <string name="title_tile_torch">手电筒</string>
     <string name="title_tile_lockscreen">锁屏</string>
     <string name="title_tile_lte">LTE</string>
@@ -1221,8 +1222,13 @@
     <string name="dialog_delete_title">删除</string>
 
     <!-- Quick access ribbon -->
-    <string name="category_quick_access">快速打开多功能栏</string>
-    <string name="title_quick_access">在抽屉中显示</string>
+    <string name="category_quick_access">迷你快速设置</string>
+    <string name="title_quick_access">在通知栏中显示</string>
     <string name="title_quick_access_linked">同步布局</string>
     <string name="summary_quick_access_linked">与快速设置面板使用相同的按钮和布局</string>
+
+        <!-- network usage stats -->
+    <string name="status_bar_network_title">网络速度</string>
+    <string name="status_bar_show_network_stats_title">显示当前网速</string>
+    <string name="status_bar_network_stats_update_title">更新频率(可节电)</string>
 </resources>
