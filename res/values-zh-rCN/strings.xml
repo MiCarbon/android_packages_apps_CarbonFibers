@@ -1227,8 +1227,15 @@
     <string name="title_quick_access_linked">同步布局</string>
     <string name="summary_quick_access_linked">与快速设置面板使用相同的按钮和布局</string>
 
-        <!-- network usage stats -->
-    <string name="status_bar_network_title">网络速度</string>
-    <string name="status_bar_show_network_stats_title">显示当前网速</string>
-    <string name="status_bar_network_stats_update_title">更新频率(可节电)</string>
+    <!-- network usage stats (ChaOS) -->
+    <string name="status_bar_network_title">网络状态</string>
+    <string name="status_bar_network_color_title">网络状态颜色</string>
+    <string name="status_bar_network_color_reset">重置颜色</string>
+    <string name="status_bar_show_network_stats_title">显示网速</string>
+    <string name="status_bar_show_network_stats_summary">在状态栏显示当前网速 (ChaOS风格)</string>
+    <string name="status_bar_network_stats_update_title">更新频率</string>
+
+    <!-- Network speed (Thinking Bridge)-->
+    <string name="show_network_speed">网络速度指示器</string>
+    <string name="show_network_speed_summary">在状态栏显示网速 (旧式)</string>
 </resources>
