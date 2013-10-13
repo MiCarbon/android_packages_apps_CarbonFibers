@@ -1157,7 +1157,7 @@
     <string name="title_tile_networkmode">网络模式</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">屏幕超时</string>
-    <string name="title_tile_usb_tether">USB 热点</string>
+    <string name="title_tile_usb_tether">USB 共享</string>
     <string name="title_tile_quiet_hours">安静时段</string>
     <string name="title_tile_volume">音量</string>
     <string name="title_tile_trds">暗黑 Carbon</string>
