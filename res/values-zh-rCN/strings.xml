@@ -81,6 +81,7 @@
     <string name="lockscreen_battery_status_alwaysoff">从不显示</string>
     <string name="lockscreen_minimize_challenge_title">简单风格</string>
     <string name="lockscreen_minimize_challenge_summary">锁屏界面不显示密码/锁屏圆环等部件,只显示一把小锁.</string>
+    <string name="battery_around_lockscreen_ring">在锁屏圆环周围显示电量信息</string>
 
     <!-- Lock screen shortcuts -->
     <string name="picker_activities">活动</string>
@@ -279,6 +280,17 @@
     <string name="clock_date_format">日期格式</string>
     <string name="clock_date_string_edittext_title">必须是日期格式 eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">输入文本</string>
+
+    <string name="notification_shade_clock">通知栏</string>
+    <string name="alarm">闹钟</string>
+    <string name="clock_options">时钟选项</string>
+    <string name="nothing">无</string>
+    <string name="today">日历</string>
+    <string name="event">在日历中建立新事件</string>
+    <string name="voiceassist">语音命令</string>
+    <string name="title_clock_doubleclick">双击时钟时动作</string>
+    <string name="title_clock_longclick">长按时钟时动作</string>
+    <string name="title_clock_shortclick">轻按时钟时动作</string>
 
    <!-- Notification Shortcuts -->
     <string name="notification_shortcuts_grouptitle">快捷方式</string>
@@ -784,8 +796,8 @@
     <string name="halo_msgbox_animation_flip">翻转</string>
 
     <!-- We want HALO popups -->
-    <string name="popups_title">允许HALO的悬浮窗</string>
-    <string name="popups_summary">可选择是否开启悬浮窗</string>
+    <string name="popups_title">HALO悬浮窗</string>
+    <string name="popups_summary">在悬浮窗中打开HALO通知对应的应用</string>
 
     <!-- Statusbar behavior -->
     <string name="statusbar_behavior_title">状态栏行为</string>
@@ -1162,6 +1174,8 @@
     <string name="title_tile_volume">音量</string>
     <string name="title_tile_trds">暗黑 Carbon</string>
     <string name="title_tile_music">音乐</string>
+    <string name="title_tile_screenshot">截屏</string>
+    <string name="title_tile_halo">Halo</string>
 
     <string name="title_dynamic_tiles">动态按钮</string>
     <string name="dynamic_tiles_note_title">注意</string>
@@ -1198,6 +1212,9 @@
     <string name="no_notifications_pulldown_off">关闭</string>
     <string name="no_notifications_pulldown_nonperm">无可清除通知时</string>
     <string name="no_notifications_pulldown_all">无任何通知时</string>
+    <string name="screenshot_delay_title">截屏延迟</string>
+    <string name="screenshot_delay_summary">设置长按截屏按钮后延迟多久截屏</string>
+ 
 
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">快速设置风格</string>
@@ -1214,6 +1231,26 @@
     <string name="flip_qs_tiles_summary">在按下按钮时翻转它</string>
     <string name="qs_random_colors_title">随机颜色</string>
     <string name="qs_random_colors_summary">随机决定快速设置面板的颜色</string>
+
+    <!-- LED Values -->
+    <string name="time_0_seconds_off">无</string>
+    <string name="time_0_2_seconds">.2 秒</string>
+    <string name="time_0_5_seconds">.5 秒</string>
+    <string name="time_1_second">1 秒</string>
+    <string name="time_1_5_seconds">1.5 秒</string>
+    <string name="time_2_seconds">2 秒</string>
+    <string name="time_2_5_seconds">2.5 秒</string>
+    <string name="time_3_seconds">3 秒</string>
+    <string name="time_3_5_seconds">3.5 秒</string>
+    <string name="time_4_seconds">4 秒</string>
+    <string name="time_4_5_seconds">4.5 秒</string>
+    <string name="time_5_seconds">5 秒</string>
+    <string name="time_5_5_seconds">5.5 秒</string>
+    <string name="time_6_seconds">6 秒</string>
+    <string name="time_7_seconds">7 秒</string>
+    <string name="time_8_seconds">8 秒</string>
+    <string name="time_9_seconds">9 秒</string>
+    <string name="time_10_seconds">10 秒</string>
 
     <!-- Reset tiles -->
     <string name="tiles_add_title">添加</string>
