@@ -972,10 +972,6 @@
     <string name="listview_anticipate_overshoot_interpolator">到达终点超出一小步然后回到终点</string>
     <string name="listview_bounce_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
 
-    <!-- Network speed -->
-    <string name="show_network_speed">网络速度显示</string>
-    <string name="show_network_speed_summary">在状态栏显示网速</string>
-
     <!--  Other device settings -->
     <string name="more_device_controls_title">设备调教(暂不可用)</string>
     <string name="more_device_settings_title">Other device options</string>
