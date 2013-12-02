@@ -206,16 +206,15 @@
     <!-- Power menu enable disable -->
     <string name="power_menu_title">电源菜单</string>
     <string name="power_menu_reboot_title">重启菜单</string>
+    <string name="power_menu_immersive_title">沉浸模式</string>
     <string name="power_menu_screenshot_title">截屏</string>
     <string name="power_menu_sound_title">声音面板</string>
     <string name="summary_expanded_desktop">%1$s</string>
-    <string name="expanded_desktop_summary">显示和改变扩展桌面模式</string>
     <string name="expanded_desktop_disabled">关闭</string>
     <string name="expanded_desktop_only_nav_bar">隐藏导航栏</string>
     <string name="expanded_desktop_only_status_bar">隐藏状态栏</string>
     <string name="expanded_desktop_both_hidden">隐藏导航栏和状态栏</string>
     <string name="power_menu_torch_title">手电筒</string>
-    <string name="power_menu_expanded_desktop">扩展桌面</string>
     <string name="power_menu_profiles_title">情景模式</string>
     <string name="power_menu_airplane_title">飞行模式</string>
     <string name="power_menu_systembar_title">系统栏</string>
@@ -1179,10 +1178,10 @@
     <string name="title_dynamic_alarm">闹钟</string>
     <string name="title_dynamic_bugreport">错误报告</string>
     <string name="title_dynamic_ime">输入法选择器</string>
-    <string name="title_dynamic_usbtether">USB 热点</string>
+    <string name="title_dynamic_usbtether">USB 共享</string>
     <string name="title_dynamic_wifi">Wi-Fi 显示</string>
 
-    <string name="title_tile_expanded_desktop">扩展桌面</string>
+    <string name="title_tile_immersive">沉浸模式</string>
     <string name="title_tile_network_adb">网络ADB</string>
 
     <string name="title_general">一般</string>
