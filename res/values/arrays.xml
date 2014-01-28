@@ -414,4 +414,69 @@
         <item>4</item>
     </string-array>
 
+    <string-array name="notification_wallpaper_entries">
+        <item>@string/notification_background_color_fill</item>
+        <item>@string/notification_background_custom_image</item>
+        <item>@string/notification_background_default_wallpaper</item>
+    </string-array>
+
+    <string-array name="notification_wallpaper_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="notification_wallpaper_landscape_entries">
+        <item>@string/notification_background_custom_image</item>
+        <item>@string/notification_background_default_wallpaper</item>
+    </string-array>
+
+    <string-array name="notification_wallpaper_landscape_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="lockscreen_long_key_press_entries" translatable="false">
+        <item>@string/lockscreen_buttons_no_action</item>
+        <item>@string/lockscreen_buttons_next</item>
+        <item>@string/lockscreen_buttons_previous</item>
+        <item>@string/lockscreen_buttons_playpause</item>
+        <item>@string/lockscreen_buttons_toggle_sound</item>
+        <item>@string/lockscreen_buttons_sleep</item>
+    </string-array>
+
+    <string-array name="lockscreen_long_key_press_values" translatable="false">
+        <item></item>
+        <item>NEXT</item>
+        <item>PREVIOUS</item>
+        <item>PLAYPAUSE</item>
+        <item>SOUND</item>
+        <item>SLEEP</item>
+    </string-array>
+
+    <string-array name="lockscreen_battery_status_entries" translatable="false">
+        <item>@string/lockscreen_battery_status_charging</item>
+        <item>@string/lockscreen_battery_status_alwayson</item>
+        <item>@string/lockscreen_battery_status_alwaysoff</item>
+    </string-array>
+
+    <string-array name="lockscreen_battery_status_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- Expanded desktop -->
+    <string-array name="expanded_desktop_entries" translatable="false">
+        <item>@string/expanded_desktop_disabled</item>
+        <item>@string/expanded_desktop_status_bar</item>
+        <item>@string/expanded_desktop_no_status_bar</item>
+    </string-array>
+
+    <string-array name="expanded_desktop_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.carbon.fibers" >
+    package="com.carbon.fibers"
+    android:sharedUserId="android.uid.system" >
 
-    <uses-sdk android:minSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="19"/>
     <original-package android:name="com.carbon.fibers" />
 
     <uses-permission android:name="android.permission.REBOOT" />
@@ -91,7 +92,7 @@
         </activity>
         <activity
  	    android:name=".CreateShortcut"
-             android:theme="@style/Theme.CreateShortCut" >
+            android:theme="@style/Theme.CreateShortCut" >
  	  <intent-filter>
                <action android:name="android.intent.action.CREATE_SHORTCUT" />
 
