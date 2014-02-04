@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.carbon.fibers.util;
+package com.carbon.fibers.fragments.navbar;
 
 import android.app.Activity;
 import android.app.Fragment;
