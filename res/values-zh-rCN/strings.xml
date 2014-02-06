@@ -430,7 +430,6 @@
     <!-- Lock Screen Targets -->
     <string name="lockscreen_target_info">把滑块拉到指定的位置以选择快捷方式</string>
     <string name="lockscreen_target_title">滑动目标</string>
-    <string name="lockscreen_target_summary">查看或更改自定义锁屏界面目标</string>
     <string name="lockscreen_target_color_title">目标图标颜色</string>
     <string name="lockscreen_eight_targets_title">8个滑动目标</string>
     <string name="lockscreen_eight_targets_summary">在锁屏界面上显示8个自定义目标.</string>
