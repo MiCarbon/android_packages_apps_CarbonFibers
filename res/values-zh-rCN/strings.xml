@@ -102,7 +102,7 @@
     <string name="volume_wake_summary">按下任一音量键可以唤醒您的设备</string>
     <string name="volbtn_music_controls_title">播放控制</string>
     <string name="volbtn_music_controls_summary">当屏幕关闭时，长按音量键可以查看音乐</string>
-    <string name="volbtn_cursor_control_title">键盘光标控制/string>
+    <string name="volbtn_cursor_control_title">键盘光标控制</string>
     <string name="volbtn_cursor_control_off">不使用</string>
     <string name="volbtn_cursor_control_on">上下音量键分别控制光标往左/右移动</string>
     <string name="volbtn_cursor_control_on_reverse">上下音量键分别控制光标往右/左移动</string>
