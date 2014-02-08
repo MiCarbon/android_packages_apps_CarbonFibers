@@ -136,20 +136,20 @@
     <string name="gamma_tuning_saturation">Saturation</string>
 
     <!-- Hardware tunables - Key backlight -->
-    <string name="button_backlight_title">Backlight</string>
-    <string name="button_backlight_enabled">Illuminate buttons</string>
-    <string name="keyboard_backlight_enabled">Illuminate keyboard</string>
-    <string name="button_backlight_seekbar_title">Button brightness</string>
-    <string name="keyboard_backlight_seekbar_title">Keyboard brightness</string>
-    <string name="backlight_timeout_title">Illumination timeout</string>
-    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
+    <string name="button_backlight_title">按键灯</string>
+    <string name="button_backlight_enabled">开启按键灯</string>
+    <string name="keyboard_backlight_enabled">开启键盘灯</string>
+    <string name="button_backlight_seekbar_title">按键灯亮度</string>
+    <string name="keyboard_backlight_seekbar_title">键盘灯亮度</string>
+    <string name="backlight_timeout_title">按键灯超时</string>
+    <string name="backlight_timeout_unlimited">永不关闭</string>
     <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> 秒</item>
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g>秒</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g>秒</item>
     </plurals>
-    <string name="backlight_summary_disabled">Disabled</string>
-    <string name="backlight_summary_enabled_with_timeout">Enabled for <xliff:g id="timeout">%s</xliff:g></string>
-    <string name="backlight_summary_enabled">Enabled</string>
+    <string name="backlight_summary_disabled">未开启</string>
+    <string name="backlight_summary_enabled_with_timeout">已开启，超时时间:<xliff:g id="timeout">%s</xliff:g></string>
+    <string name="backlight_summary_enabled">一直开启</string>
 
     <!-- Statusbar settings -->
     <string name="status_bar_title">状态栏和通知栏</string>
@@ -473,14 +473,14 @@
     <string name="icon_picker_twitter">Twitter</string>
 
     <!--Lockscreen See Through-->
-     <string name="see_through_title">See through</string>
-     <string name="see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
+     <string name="see_through_title">锁屏透视</string>
+     <string name="see_through_summary">显示锁屏界面下内容，如果设置模糊级别为0，其他人可能看到您的隐私数据</string>
 
      <!--Lockscreen blur-->
-    <string name="blur_behind_title">Blur lockscreen background</string>
+    <string name="blur_behind_title">锁屏背景模糊级别</string>
     <string name="blur_behind_summary">Adds a nice blur effect to the background</string>
-    <string name="blur_radius_title">Blur radius</string>
-    <string name="blur_radius_summary">Set the blur radius for the blur effect</string>
+    <string name="blur_radius_title">模糊度</string>
+    <string name="blur_radius_summary">设置模糊效果的级别</string>
 
     <!-- Lockscreen Notifications -->
     <!-- Categories -->
@@ -488,31 +488,31 @@
     <string name="layout">布局</string>
     <string name="privacy">隐私</string>
 
-    <string name="lockscreen_notifications">Lockscreen notifications</string>
-    <string name="lockscreen_notifications_summary">Show pending notifications on lockscreen</string>
-    <string name="pocket_mode">Pocket mode</string>
-    <string name="pocket_mode_summary">Turn screen on and show all notifications when device is pulled out of pocket. Turn screen off when device gets back into pocket.</string>
-    <string name="show_always">Show always</string>
-    <string name="show_always_summary">Always turn screen on when pulled out of pocket, even when there are no notifications pending</string>
-    <string name="hide_low_priority">Hide low priority</string>
-    <string name="hide_low_priority_summary">Hide low priority notifications such as google now weather notifications</string>
-    <string name="hide_non_clearable">Hide non clearable</string>
-    <string name="hide_non_clearable_summary">Hide all non clearable notifications</string>
-    <string name="dismiss_all">Allow dismissing all notifications</string>
-    <string name="dismiss_all_summary">Allow dismissing even non clearable notifications. Of course, they\'re just hidden from lockscreen and not from the notification panel.</string>
-    <string name="expanded_view">Expanded notification view</string>
-    <string name="expanded_view_summary">Add possibility to toggle between normal and expanded view by longpress. The expanded view sometimes shows more private information so you might want to disable it.</string>
-    <string name="force_expanded_view">Force expanded view</string>
-    <string name="force_expanded_view_summary">Show notifications expanded by default. You still will be able to toggle between expanded and normal view.</string>
-    <string name="wake_on_notification">Wake on notification</string>
-    <string name="wake_on_notification_summary">Wake device when a new notification is received</string>
-    <string name="notifications_height">Notification count</string>
-    <string name="notifications_height_summary">Number of notifications displayed at once</string>
+    <string name="lockscreen_notifications">智能唤醒与锁屏通知</string>
+    <string name="lockscreen_notifications_summary">在锁屏界面显示通知</string>
+    <string name="pocket_mode">口袋模式</string>
+    <string name="pocket_mode_summary">从口袋中拿出手机时开启屏幕并显示所有通知. 当您将手机放回口袋时自动关闭屏幕.(将会在休眠时开启距离传感器)</string>
+    <string name="show_always">口袋模式+</string>
+    <string name="show_always_summary">扩展口袋模式的功能，即使没有通知从口袋中拿出手机时也会点亮屏幕</string>
+    <string name="hide_low_priority">低优先级隐藏</string>
+    <string name="hide_low_priority_summary">隐藏低优先级通知，比如Google即时的天气通知</string>
+    <string name="hide_non_clearable">不显示无法清除的通知</string>
+    <string name="hide_non_clearable_summary">隐藏所有不可清除通知</string>
+    <string name="dismiss_all">允许划除所有通知</string>
+    <string name="dismiss_all_summary">允许您清除掉所有通知.当然,它们只会在锁屏界面消失.</string>
+    <string name="expanded_view">可展开通知</string>
+    <string name="expanded_view_summary">让您能够通过长按通知项展开或者收起可展开式通知，但是展开后的通知可能会显示出更多隐私信息.</string>
+    <string name="force_expanded_view">默认展开通知</string>
+    <string name="force_expanded_view_summary">默认显示展开后的通知.您仍然可以通过长按来将它们收起.</string>
+    <string name="wake_on_notification">新通知自动唤醒</string>
+    <string name="wake_on_notification_summary">当收到新通知(如聊天消息)时自动唤醒设备(可能增加耗电)</string>
+    <string name="notifications_height">通知数量</string>
+    <string name="notifications_height_summary">一屏中显示通知的数量</string>
     <string name="offset_top">Offset to the top of the screen:</string>
-    <string name="privacy_mode">Privacy Mode</string>
-    <string name="privacy_mode_summary">Disables notifications from beeing shown and dismissed. This way, you just see the icons of your notifications.</string>
-    <string name="excluded_apps_title">Excluded applications</string>
-    <string name="excluded_apps_summary">Excluded applications will not show up as lockscreen notifications</string>
+    <string name="privacy_mode">隐私模式</string>
+    <string name="privacy_mode_summary">禁用查看通知和清除通知功能. 开启后,您只能看见通知的图标.</string>
+    <string name="excluded_apps_title">应用黑名单</string>
+    <string name="excluded_apps_summary">黑名单中的应用不会出现在锁屏界面的通知中</string>
 
     <!-- Status bar color -->
     <string name="custom_status_bar_color_title">自定义状态栏颜色</string>
@@ -538,17 +538,17 @@
     <string name="system_power_crt_mode_scale">放大缩小</string>
 
     <!-- Custom Carrier Label Options -->
-    <string name="carrier_label_title">Carrier label options</string>
-    <string name="custom_carrier_label_title">Custom carrier label</string>
-    <string name="custom_carrier_label_explain">Please enter a new label. Enter an empty label to revert to stock label.</string>
-    <string name="custom_carrier_label_notset">Custom label currently not set</string>
-    <string name="hide_carrier_title">Hide carrier label</string>
-    <string name="notification_show_wifi_ssid_title">Show Wifi network name</string>
-    <string name="notification_show_wifi_ssid_summary">Display the name of the currently connected Wifi network</string>
+    <string name="carrier_label_title">运营商名称选项</string>
+    <string name="custom_carrier_label_title">自定义运营商名称</string>
+    <string name="custom_carrier_label_explain">请输入一个新名称. 留空将使用默认运营商名称.</string>
+    <string name="custom_carrier_label_notset">未设置自定义运营商名称</string>
+    <string name="hide_carrier_title">隐藏运营商名称</string>
+    <string name="notification_show_wifi_ssid_title">显示WLAN网络名称e</string>
+    <string name="notification_show_wifi_ssid_summary">显示当前连接到的WLAN网络名称</string>
 
     <!-- Show 4G icon instead of LTE. User defined settings -->
-    <string name="show_lte_or_fourgee_title">Use 4G icon</string>
-    <string name="show_lte_or_fourgee_summary">Switches the network indicator from LTE to 4G</string>
+    <string name="show_lte_or_fourgee_title">使用4G图标</string>
+    <string name="show_lte_or_fourgee_summary">使用4G图标而非LTE图标</string>
 
     <!-- Network Traffic -->
     <string name="color_default">默认</string>
@@ -560,37 +560,37 @@
     <string name="status_bar_network_stats_color_summary">状态栏网速文本的颜色</string>
 
     <!-- Notification drawer background -->
-    <string name="notification_style_title">Style</string>
-    <string name="notification_style_summary">Change your notification drawer style</string>
-    <string name="notification_wallpaper_title">Background</string>
-    <string name="notification_wallpaper_landscape_title">Different landscape background</string>
-    <string name="notification_background_color_fill">Color fill</string>
-    <string name="notification_background_custom_image">Custom image</string>
-    <string name="notification_background_default_wallpaper">Default background</string>
-    <string name="notification_drawer_custom_background_dialog_title">Choose color</string>
-    <string name="notif_wallpaper_alpha_title">Background transparency</string>
-    <string name="notif_alpha_title">Notification transparency</string>
-    <string name="shortcut_image_not_valid">The chosen app did not return a valid icon or does not support image cropping. Use another app</string>
+    <string name="notification_style_title">风格</string>
+    <string name="notification_style_summary">更改通知栏风格</string>
+    <string name="notification_wallpaper_title">背景</string>
+    <string name="notification_wallpaper_landscape_title">不同的横屏背景</string>
+    <string name="notification_background_color_fill">填充颜色</string>
+    <string name="notification_background_custom_image">自定义图片</string>
+    <string name="notification_background_default_wallpaper">默认背景</string>
+    <string name="notification_drawer_custom_background_dialog_title">选择颜色</string>
+    <string name="notif_wallpaper_alpha_title">背景透明度</string>
+    <string name="notif_alpha_title">通知项透明度</string>
+    <string name="shortcut_image_not_valid">选定的应用无法提供可用的图标或者不支持剪裁操作.请尝试其他应用.</string>
 
     <!-- Lock screen buttons -->
-    <string name="lockscreen_long_press_back_title">Long press Back button</string>
-    <string name="lockscreen_long_press_home_title">Long press Home button</string>
-    <string name="lockscreen_long_press_menu_title">Long press Menu button</string>
-    <string name="lockscreen_buttons_no_action">No action</string>
-    <string name="lockscreen_buttons_flashlight">Flashlight</string>
-    <string name="lockscreen_buttons_next">Next song</string>
-    <string name="lockscreen_buttons_previous">Previous song</string>
-    <string name="lockscreen_buttons_playpause">Play/Pause music</string>
-    <string name="lockscreen_buttons_toggle_sound">Toggle sound</string>
-    <string name="lockscreen_buttons_sleep">Go to sleep</string>
+    <string name="lockscreen_long_press_back_title">长按返回键操作</string>
+    <string name="lockscreen_long_press_home_title">长按主屏键操作</string>
+    <string name="lockscreen_long_press_menu_title">长按菜单键操作</string>
+    <string name="lockscreen_buttons_no_action">无操作</string>
+    <string name="lockscreen_buttons_flashlight">手电筒</string>
+    <string name="lockscreen_buttons_next">播放下一首歌</string>
+    <string name="lockscreen_buttons_previous">播放上一首歌</string>
+    <string name="lockscreen_buttons_playpause">播放/暂停音乐</string>
+    <string name="lockscreen_buttons_toggle_sound">开关响铃模式</string>
+    <string name="lockscreen_buttons_sleep">关闭屏幕</string>
 
     <!-- Lock screen battery status -->
-    <string name="lockscreen_battery_status_title">Battery status</string>
-    <string name="lockscreen_battery_status_charging">Only when charging</string>
-    <string name="lockscreen_battery_status_alwayson">Always on</string>
-    <string name="lockscreen_battery_status_alwaysoff">Always off</string>
+    <string name="lockscreen_battery_status_title">电池状态</string>
+    <string name="lockscreen_battery_status_charging">仅充电时显示</string>
+    <string name="lockscreen_battery_status_alwayson">总是显示</string>
+    <string name="lockscreen_battery_status_alwaysoff">不显示</string>
 
-    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="power_menu_expanded_desktop">扩展桌面</string>
     <string name="expanded_desktop_disabled">Disabled</string>
     <string name="expanded_desktop_status_bar">Status bar visible</string>
     <string name="expanded_desktop_no_status_bar">Status bar hidden</string>
@@ -614,7 +614,7 @@
     <string name="navigation_menu_default_jb_behavior">Show on request (default)</string>
     <string name="navigation_menu_never_show">Never show</string>
     <string name="navigation_menu_always_show">Always show</string>
-    <string name="navigation_bar">Navigation bar</string>
+    <string name="navigation_bar">导航栏</string>
     <string name="navbar_button_cat">Navigation bar buttons</string>
     <string name="title_pref_menu_location">Menu location</string>
     <string name="summary_pref_menu_location">Where do you want the menu buttons to appear?</string>
@@ -770,20 +770,20 @@
     <string name="listview_bounce_interpolator">到达终点产生弹球效果，弹几下回到终点</string>
 
     <!-- Lockscreen style settings -->
-    <string name="lockscreen_style_reset_message">Reset all lockscreen colors?</string>
-    <string name="lockscreen_icon_title">Lock handle icon</string>
-    <string name="lockscreen_lock_icon_custom">Custom icon</string>
-    <string name="lockscreen_lock_icon_carbon">Carbon icon</string>
-    <string name="lockscreen_lock_icon_default">Default icon</string>
-    <string name="lockscreen_colorize_handle_title">Colorize custom handle</string>
-    <string name="lockscreen_colorize_handle_summary">Lock color will be set to the lock handle</string>
-    <string name="lockscreen_style_title">Theme style</string>
-    <string name="lockscreen_frame_color_title">Frame color</string>
-    <string name="lockscreen_frame_color_summary">Color of the widget and unlock frames</string>
-    <string name="lockscreen_lock_color_title">Lock color</string>
-    <string name="lockscreen_lock_color_summary">Color of the lock handles</string>
-    <string name="lockscreen_dots_color_title">Dots color</string>
-    <string name="lockscreen_dots_color_summary">Color of the glowpad dots</string>
+    <string name="lockscreen_style_reset_message">重置所有锁屏颜色?</string>
+    <string name="lockscreen_icon_title">滑动条图标</string>
+    <string name="lockscreen_lock_icon_custom">自定义图标</string>
+    <string name="lockscreen_lock_icon_carbon">Carbon 图标</string>
+    <string name="lockscreen_lock_icon_default">小锁</string>
+    <string name="lockscreen_colorize_handle_title">自定义滑动条颜色</string>
+    <string name="lockscreen_colorize_handle_summary">小锁颜色会被应用到自定义滑动条上</string>
+    <string name="lockscreen_style_title">锁屏风格</string>
+    <string name="lockscreen_frame_color_title">边缘颜色</string>
+    <string name="lockscreen_frame_color_summary">解锁圆环与小部件边缘的颜色</string>
+    <string name="lockscreen_lock_color_title">小锁颜色</string>
+    <string name="lockscreen_lock_color_summary">小锁滑动条的颜色</string>
+    <string name="lockscreen_dots_color_title">小点颜色</string>
+    <string name="lockscreen_dots_color_summary">四周扩散小点的颜色</string>
 
     <!-- Status bar brightness slider -->
     <string name="brightness_slider_title">亮度滑块</string>
